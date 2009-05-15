@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=System Doc
+Name[fr]=Doc du système
+Exec=browser /usr/share/doc
+Icon=slitaz-doc.png
+Type=Application
+Categories=Documentation;
