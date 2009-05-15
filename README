@@ -2,6 +2,15 @@ README for slitaz-doc                                                      2009
 ===============================================================================
 
 
+English
+-------
+This package provide SliTaz documentation installed on the system by default. With
+the cooking version we just provide some tiny info, with the stable version we also
+provide the Release Notes.
+
+
+Français
+--------
 Ce paquet fourni la documentation installée sur le corps du LiveCD, en
 version Cooking il donne juste quelques informations, en version stable il
 inclu les notes de publication (relnotes.html). Pour une documentation bien
