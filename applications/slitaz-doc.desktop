@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Documentation
+Name[pt]=Documentação
 Exec=firefox /usr/share/doc/slitaz/index.html
 Icon=slitaz-doc.png
 Type=Application
