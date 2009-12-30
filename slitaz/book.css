@@ -3,37 +3,47 @@
 	Pankso 2007 - www.slitaz.org
 */
 
+html {
+	height:  102%;
+}
+
 body {
 	font: 13px sans-serif, vernada, arial;
-	background: #222222;
+	background: #ffffff;
 	margin: 0;
-	padding-bottom: 100%;
 }
 
 #header {
-	background: #BFB06B url(images/css/header.png) repeat-x top;
+	background: #f0ba08 url(images/css/header.png) repeat-x top;
 	color: black;
 	height: 50px;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 }
+
+#header h1 {
+	padding: 10px;
+}
+
 #quicknav {
-	margin-right: 6px;
 	text-align: right;
 	font-size: 12px;
-	}
-#quicknav {
-	margin-right: 6px;
+	color: #666666;
+	background-color: #eaeaea;
+	padding: 4px 2px;
+	font-weight: bold;
 }
 
 #quicknav a {
+	color: #0F314E;
 	background: inherit;
-	color: white;
+	text-decoration: none;
+	padding: 0px 2px;
 }
 
 #quicknav a:hover {
-	background: inherit;
-	color: #EDEDED;
+	color: #DF8F06;
+	text-decoration: none;
 }
 
 /*  content. */
@@ -42,7 +52,7 @@ body {
 	background: white url(images/css/content-tl.png) no-repeat top left;
 	color: black;
 	padding: 20px;
-	margin: 30px 50px 0px 50px;
+	margin: 0px 50px 0px 50px;
 	width: auto;
 	text-align: justify;
 }
@@ -56,25 +66,22 @@ body {
 
 #footer {
 	font-size: 11px;
-	font-weight: bold;
-	background: #eaeaea url(images/css/footer-bl.png) no-repeat bottom left;
 	color: black;
 	height: 20px;
-	padding: 6px 0px 0px 10px;
-	margin: 0px 50px 0px 50px;
+	padding: 0px 0px 0px 10px;
+	margin: 0px;
 	width: auto;
 	text-align: center ;
 }
 
 #footer a {
-	text-decoration: none;
-	background: #eaeaea;
-	color: #3E1220;
+	background: #ffffff;
+	color: #0F314E;
 }
 
 #footer a:hover {
-	background: #eaeaea;
-	color: #DF8F06;
+	background: #ffffff;
+	color: blue;
 }
 
 /* Legal informations */
@@ -84,7 +91,7 @@ body {
 	text-align: center ;
 	background: transparent;
 	color: #a8a8a8;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 
 #copy a {
@@ -94,7 +101,7 @@ body {
 
 #copy a:hover {
 	background: inherit;
-	color: #EDEDED;
+	color: blue;
 }
 
 /* Clouds */
