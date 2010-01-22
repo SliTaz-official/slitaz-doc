@@ -41,12 +41,124 @@ informações sobre a versão de testes no website e suporte no
 <a href="http://forum.slitaz.org/">fórum</a> do projeto.
 </p>
 
+<h2><font color="#DF8F06">Primeiros Passos</font></h2>
+
+<a name="network"></a>
+<h3>Conexão de Rede</h3>
+<p>
+Clique no "Network Status Monitor" (Monitor de Status da Rede) na parte
+de baixo e direita da tela, em "Configure" e então o netbox (gerenciador
+de rede) será executado. Você pode ir até a aba "DHCP" e clicar em "Start",
+e o SliTaz irá enviar uma requisição DHCP para o roteador local. Você
+também pode configurar ip estático, PPPoE, PPP, VPN e mais usando as 
+respectivas abas. Para configurar conexões wireless (sem fio) você pode
+usar o aplicativo wifibox clicando em "Wireless Manager" (Gerenciador
+de Redes Wireless) que se localiza no Gerenciador de Rede ou indo na
+entrada de menu "Ferramentas do Sistema" -> "Gerenciador de Redes Wireless".
+</p>
+<p>
+Maiores informações podem ser encontradas no Manual Do Slitaz: 
+<a href="http://www.slitaz.org/pt/doc/handbook/network-config.html"
+	>Configuração de Rede</a>
+</p>
+
+<a name="apps"></a>
+<h3>Aplicativos</h3>
+<p>
+Para obter uma lista de todos os aplicativos gráficos você pode usar
+o botão de Menu do SliTaz na parte de baixo e esquerda da tela. Para uma
+lista das ferramentas de linha de comando, pode abrir o terminal e clicar
+por duas vezes a tecla Tab. Para ter uma lista de todos os pacotes de 
+aplicativo instalados use o gerenciador de pacotes, iniciando-o pelo seu 
+ícone na parte de baixo e direita ou pelo menu "Ferramentas do Sistema". 
+Para instalar um novo pacote deve-se possuir ou uma conexão de rede, ou
+o DVD que contém todos os pacotes ou um dispositivo USB que contenha 
+pacotes baixados de outra máquina. O gerenciador de pacotes também pode
+ser utilizado na linha de comando, abrindo o terminal e digitando 
+<code>tazpkg</code>.
+</p>
+
+<a name="office"></a>
+<h3>Suíte de Escritório</h3>
+<p>
+O SliTaz fornece em seu repositório de pacotes alguns aplicativos de 
+escritório leves. Todos estes pacotes podem ser instalados com alguns
+cliques a partir do gerenciador de pacotes. O SliTaz também fornece
+uma maneira simples de instalar a famosa e poderosa suíte de escritório
+OpenOffice: busque por OpenOffice no gerenciador de pacotes, dê um duplo
+clique em "get-OpenOffice3" e instale o script deixando a opção
+<code>Auto exec</code> selecionada.
+</p>
+<p>
+Para ter uma suíte de escritório leve utilize o Abiword como processador
+de textos, o Gnumeric para planilhas e o Homebank para genenciar contas
+bancárias.
+</p>
+
+<a name="multimedia"></a>
+<h3>Multimídia</h3>
+<p>
+A maioria das variantes (flavors) do SliTaz incluem uma vasta gama de 
+drivers de placas de som, um mixer de volume e um reprodutor de áudio 
+leve que permite executar arquivos MP3 e OGG. A placa de som é detectada
+automaticamente durante o boot e o suporte a áudio funciona sem maiores
+problemas na maioria dos sistemas. Se você adicionar um novo usuário e
+este não puder ouvir o áudio, certifique-se que ele pertence ao grupo
+<code>audio</code>. Se ocorrer algum problema leia a documentação no site
+e utilize o fórum de discussão para obter ajuda.
+</p>
+<p>
+Vídeos podem ser assistidos instalando um único pacote ou usando um LiveCD
+ou LiveUSB dedicado à multimídia. A equipe do SliTaz empacotou alguns dos
+melhores reprodutores de vídeo disponíveis para GNU/Linux: <code>mplayer</code>,
+<code>xine-ui</code> e <code>vlc</code>.
+</p>
+
+<a name="info"></a>
+<h3>Informações do Sistema</h3>
+<p>
+você pode obter informações sobre seu sistema abrindo o menu e clicando
+em "Ferramentas do Sistema" -> "Informações e Testes do Sistema" e então,
+quando o programa abrir, clicar em "Summary". Clicar em outras opções
+trará informações mais detalhadas, e usando os benchmarks lhe dará uma
+idéia de quão rápido é o seu sistema. Para obter uma lista e controlar
+todos os processos que estão rodando você pode usar o "Gerenciador de 
+Processos".
+</p>
+
+<a name="root"></a>
+<h3>Tornando-se usuário root</h3>
+<p>
+Por padrão o SliTaz não executa o ambiente desktop como o usuário 
+administrador root: sempre é pedida a senha do root (a padrão é 
+<code>root</code>) para cada tarefa de gerenciamento do sistema e que
+possa ser potencialmente danosa. Isto traz uma certa segurança para o 
+usuário. Para se tornar root abra o terminal, digite <code>su</code>
+e informe a senha do root.
+</p>
+
+<a name="install"></a>
+<h3>Instalação</h3>
+<p>
+O SliTaz pode ser instalado no disco rígido ou em um drive usb utilizando
+o "Instalador do SliTaz" que se encontra no menu "Ferramentas do Sistema".
+Este utilitário faz uma instalação completa do SliTaz no disco rígido.
+Assim, o SliTaz não será mais carregado na memória RAM como no modo LiveCD
+ou Frugal e todas as alterações serão persistentes.
+</p>
+<p>
+Para criar um sistema LiveUSB você pode usar o "Tazusb LiveUSB Tool" no
+menu "Ferramentas do Sistema" ou digitar <code>tazusb</code> na linha de
+comando. Maiores informações podem ser encontradas no Manual do SliTaz:
+<a href="http://www.slitaz.org/pt/doc/handbook/liveusb.html">Mídia LiveUSB</a>
+</p>
+
 <!-- End of content -->
 </div>
 
 <!-- Footer. -->
 <div id="footer">
-	<a href="#top">Top of the page</a> - Languages:
+	<a href="#top">Topo da Página</a> - Outras Línguas:
 	<a href="index.de.html">de</a> |
 	<a href="index.en.html">en</a> |
 	<a href="index.fr.html">fr</a> |
