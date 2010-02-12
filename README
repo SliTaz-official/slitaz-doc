@@ -1,4 +1,4 @@
-README for slitaz-doc                                                      2009
+README for slitaz-doc
 ===============================================================================
 
 
@@ -8,6 +8,7 @@ This package provides SliTaz documentation installed on the system by default.
 With the cooking version we just provide some basic information, with the 
 stable version we also provide the Release Notes.
 
+Desktop file are also provided to have a menu entry and an icon on users desktop.
 
 Français
 --------
