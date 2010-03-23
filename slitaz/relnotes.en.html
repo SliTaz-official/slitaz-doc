@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>SliTaz 3.0 Release notes</title>
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="slitaz doc system releases notes information cooking" />
+	<meta name="expires" content="never" />
+	<meta name="modified" content="2010-03-22 22:10:00" />
+	<meta name="publisher" content="www.slitaz.org" />
+	<meta name="author" content="Christophe Lincoln"/>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+	<a name="top"></a>
+	<h1><font color="#3E1220">SliTaz - System doc</font></h1>
+</div>
+
+<div id="quicknav">
+	SliTaz:
+	<a href="http://www.slitaz.org/">Website</a>
+	<a href="http://forum.slitaz.org/">Forum</a>
+	<a href="http://doc.slitaz.org/">Documentation</a>
+	<a href="http://pkgs.slitaz.org/">Packages</a>
+	<a href="http://labs.slitaz.org/">Labs</a>
+</div>
+
+<!-- Content. -->
+<div id="content">
+
+<h2><font color="#df8f06">Releases notes</font></h2>
+
+<ul>
+	<li><a href="#overview">Overview.</a></li>
+	<li><a href="#hardware">Supported Hardware.</a></li>
+	<li><a href="#livecd">LiveCD Flavors.</a></li>
+	<li><a href="#toolchain">Kernel and toolchain.</a></li>
+	<li><a href="#utf-8">UTF-8 support.</a></li>
+	<li><a href="#xorg">Xorg server.</a></li>
+	<li><a href="#install">HD Install and LiveUSB.</a></li>
+	<li><a href="#packages">Software Packages.</a></li>
+	<li><a href="#desktop">Core Desktop.</a></li>
+	<li><a href="#upgrade">From 2.0 to 3.0.</a></li>
+	<li><a href="#people">People of the Project.</a></li>
+</ul>
+
+<a name="overview"></a>
+<h3><font color="#6c0023"></font>Overview</h3>
+<p>
+Welcome to SliTaz 3.0! Small, fast, easy to use and customize, the new
+SliTaz stable version is out after one year of development.
+</p>
+<ul>
+    <li>Boot scripts rewrite and faster</li>
+    <li>All home-made boxes improved</li>
+    <li>Better theme and integration</li>
+    <li>Switch to Midori has default web browser</li>
+    <li>Better hardware support mainly wifi card</li>
+    <li>Fast virtualization with lguest</li>
+    <li>SliTaz pro: OpenERP, LAMP, Glpi</li>
+    <li>More contributors and stronger community</li>
+    <li>Easier to customize</li>
+    <li>Packages are now automaticaly built by a build bot (Tazbb)</li>
+    <li>900 packages added in the database and many update</li>
+    <li>More than 2800 commit by contributors</li>
+</ul>
+<p>
+Technical support is provided to users via the mailing list and the official
+forum: <a href="http://forum.slitaz.org/">forum.slitaz.org</a>
+</p>
+
+<a name="hardware"></a>
+<h3><font color="#6c0023">Supported Hardware</font></h3>
+<p>
+SliTaz GNU/Linux supports all machines based on i486 or x86 Intel compatible
+processors. A minimum 192MB of memory is recommended to use the core LiveCD. 
+64MB is needed for the "slitaz-loram" flavor and 16MB for the 
+"slitaz-loram-cdrom" flavor.
+</p>
+<p>
+With the slitaz-loram flavor, the system is less responsive, but allows you to
+graphically install SliTaz on very old machines. Once installed, SliTaz works
+well with a minimum of 16MB memory, but forget about using Firefox to surf the 
+web - you'll have to use the text based 'links' for example.  
+</p>
+<p>
+SliTaz 3.0 provide all needed drivers and tools such has 915resolution to
+have support for wide range of netbooks (Eeepc, HP mini, etc).
+</p>
+
+<a name="livecd"></a>
+<h3><font color="#6c0023">LiveCD Flavors</font></h3>
+<p>
+SliTaz GNU/Linux is distributed as a bootable LiveCD allowing you to use
+it as a nomad system or graphically install to the hard drive and retain
+the use of your previous system including all settings, applications, 
+documents, etc. 
+</p>
+<p>
+The LiveCD can also be customised and easily rebuilt both graphically or from
+the command line. Install your own custom set of packages, or simply use one
+of the preset flavors on the mirror. Then simply generate your distribution 
+with the "Tazlito" tool.
+</p>
+
+<a name="toolchain"></a>
+<h3><font color="#6c0023">Kernel and toolchain</font></h3>
+<p>
+SliTaz 3.0 comes with a new but very well tested Kernel and a complete new
+toolchain from witch the all system is build. The Linux kernel version is 2.6.30.6
+who is split in separate package for additionnal driver or features. This time
+we also built-in some more drivers to have a faster kernel boot.
+</p>
+<p>
+The new toolchain comprise: Binutils 2.19.1, GCC 4.4.1, Glibc 2.10.1
+</p>
+
+<a name="utf-8"></a>
+<h3><font color="#6c0023">UTF-8 support</font></h3>
+
+<a name="xorg"></a>
+<h3><font color="#6c0023">Xorg server</font></h3>
+
+<a name="install"></a>
+<h3><font color="#6c0023">HD install and LiveUSB</font></h3>
+<p>
+The installation is fully automated and can be done graphically or in text
+mode. In this version the installer will let you use a separate partition for
+/home, configure root password and chose default user login. Installer now
+also support intallation from a LiveUSB session.
+</p>
+<p>
+Full USB install are also supported and some time needs a <code>rootdelay=10</code>
+as a kernel argument (in GRUB menu.lst).
+</p>
+
+<a name="packages"></a>
+<h3><font color="#6c0023">Software Packages</font></h3>
+<p>
+SliTaz 3.0 have 2291 package in the database, a wide variety of packages
+have been commited and many force went to professionnal grade software such
+as OpenERP, MySQL, Glpi.
+</p>
+<p>
+On the update side, mainly all the packages have been update, including
+the kernel, all the toolchain, Xorg (7.4), GTK and QT. Package format have
+also changed and now use lzma for better compression. Packages are also
+checked by Tazwok to ensure FSH is followed and built automaticaly by 
+SliTaz Build Bot: <a href="http://bb.slitaz.org/">bb.slitaz.org</a>
+</p>
+
+<a name="desktop"></a>
+<h3><font color="#6c0023">Core Desktop</font></h3>
+<p>
+The core desktop provide a selection of multi-use packages for surfing the
+web, listening to music, audio editing, image manipulation, developing or 
+burning to optical media. It's just one click in the  application menu to
+find software installed by category.
+</p>
+<p>
+A lot of attention have been ported the the core desktop, all applications
+are well integrate and a special SliTaz theme (icons, Openbox, GTK) have
+been done.
+</p>
+
+<a name="security"></a>
+<h3><font color="#6c0023">Security</font></h3>
+<p>
+packages + mountbox: dmsetup linux-md devmapper
+</p>
+
+<a name="upgrade"></a>
+<h3><font color="#6c0023">From 1.0 to 2.0</font></h3>
+<p>
+The SliTaz GNU/linux installer offers an update function allowing you to
+upgrade from a '2.0' to '3.0' version. To upgrade the system you first
+need to boot the 'Stable' LiveCD, launch the installer, select upgrade and then
+specify the partition containing the system that you want to update. The
+installer will then clean out the system and reinstall all the packages not
+present on the CD from the mirror. When this has finished you can reboot
+with your new version of SliTaz.
+</p>
+<p>
+Note that the installer will keep a copy of the list of packages and a complete
+archive of the /etc directory (etc.tar.gz) in /var/lib/slitaz-install.
+</p>
+<p>
+To upgrade a 2.0 to 3.0 it is also possible to use the package manager "Tazpkg" 
+via the 'set-release' function, but beware this is not yet proven and may 
+require some manual intervention. If you choose this way you must first
+install 'tazpkg' from 3.0, because package format have change.
+</p>
+
+<a name="people"></a>
+<h3><font color="#6c0023">People of the Project</font></h3>
+<p>
+SliTaz is proud to be an international community project. The people of the
+project are the ones who develop the distribution, correct the website,
+develop the HG repositories and write the official documentation. Passing
+through Switzerland, France, Brazil, Quebec, China, Russia, England, 
+and the U.S.
+</p>
+<ul>
+	<li>Christophe Lincoln</li>
+	<li>Pascal Bellard</li>
+	<li>Eric Joseph-Alexandre</li>
+	<li>Paul Issott</li>
+	<li>Julien Rabier</li>
+	<li>Rohit Joshi</li>
+	<li>Claudinei Pereira</li>
+	<li>Dominique Corbex</li>
+	<li>Mallory Mollo</li>
+	<li>Mike D. Smith</li>
+	<li>Allan Pinto</li>
+	<li>Alice Ayanami</li>
+	<li>F. Steiner</li>
+	<li>Chen Yufei</li>
+	<li>Bill Nagel</li>
+	<li>Michael Dupont</li>
+	<li>Franco Azzano</li>
+	<li>Fabrice Thiroux</li>
+	<li>Eduardo Suarez-Santana</li>
+	<li>Tom Frankland</li>
+	<li>Sandeep Srinivasa</li>
+	<li>David Ozura</li>
+	<li>Pierre Romillon</li>
+	<li>...</li>
+</ul>
+<p>
+The project also wishes to thank all the reviewers, testers, hackers and users
+who have taken the time to help advance the distribution.
+</p>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="http://www.slitaz.org/en/doc/">Index of /usr/share/doc/slitaz</a>
+</div>
+
+<div id="copy">
+	Copyright &copy; 2009 <a href="http://www.slitaz.org/">SliTaz</a> -
+	<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br>
+	Documentation published under
+	<a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+	and <a href="http://validator.w3.org/">xHTML 1.0 valid</a>.
+</div>
+
+</body>
+</html>
+
