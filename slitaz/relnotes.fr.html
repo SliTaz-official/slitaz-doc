@@ -95,7 +95,8 @@ une large gamme de netbooks (Eeepc, HP mini, Aspire One etc.).
 <a name="livecd"></a>
 <h3><font color="#6c0023">LiveCD à Saveurs</font></h3>
 <p>
-SliTaz GNU/Linux est distribuée sous la forme d'un LiveCD amorçable
+SliTaz GNU/Linux est distribuée sous la forme d'un LiveCD bootable qui peut être utilisé 
+comme un système nomad ou installé graphiquement sur le disque dur
 
 SliTaz GNU/Linux is distributed as a bootable LiveCD allowing you to use
 it as a nomad system or graphically install to the hard drive and retain
@@ -103,32 +104,40 @@ the use of your previous system including all settings, applications,
 documents, etc. 
 </p>
 <p>
-The LiveCD can also be customised and easily rebuilt both graphically or from
-the command line. Install your own custom set of packages, or simply use one
-of the preset flavors on the mirror. Then simply generate your distribution 
-with the "Tazlito" tool.
+Le LiveCD peut également être customisé et simplement reconstruit à 
+l'aide des outils graphiques ou en ligne de commande.
+Installez vos propres paquets, ou utilisez une saveur téléchargée 
+depuis le mirroir. 
+Puis regénérez votre LiveCD avec l'outil "Tazlito".
 </p>
 
 <a name="toolchain"></a>
-<h3><font color="#6c0023">Kernel and toolchain</font></h3>
+<h3><font color="#6c0023">Noyau et toolchain</font></h3>
 <p>
+SliTaz 3.0 est livrée avec la nouvelle toolchain qui a servie à 
+recompiler tout le système.
+La version 2.6.30.6 du noyau Linux divisée en plusieurs paquets <who 
+is split in separate package for additionnal driver or features>.
+Certain pilotes ont été compiler dans le noyau pour en accélérer le 
+chargement.
+
 SliTaz 3.0 comes with a new but very well tested Kernel and a complete new
 toolchain from witch the all system is build. The Linux kernel version is 2.6.30.6
 who is split in separate package for additionnal driver or features. This time
 we also built-in some more drivers to have a faster kernel boot.
 </p>
 <p>
-The new toolchain comprise: Binutils 2.19.1, GCC 4.4.1, Glibc 2.10.1
+La nouvelle tootlchain inclue: Binutils 2.19.1, GCC 4.4.1, Glibc 2.10.1
 </p>
 
 <a name="utf-8"></a>
 <h3><font color="#6c0023">UTF-8 support</font></h3>
 
 <a name="xorg"></a>
-<h3><font color="#6c0023">Xorg server</font></h3>
+<h3><font color="#6c0023">Serveur Xorg</font></h3>
 
 <a name="install"></a>
-<h3><font color="#6c0023">HD install and LiveUSB</font></h3>
+<h3><font color="#6c0023">Installation sur disque dur et LiveUSB</font></h3>
 <p>
 The installation is fully automated and can be done graphically or in text
 mode. In this version the installer will let you use a separate partition for
@@ -200,11 +209,13 @@ install 'tazpkg' from 3.0, because package format have change.
 <a name="people"></a>
 <h3><font color="#6c0023">People of the Project</font></h3>
 <p>
-SliTaz is proud to be an international community project. The people of the
-project are the ones who develop the distribution, correct the website,
-develop the HG repositories and write the official documentation. Passing
-through Switzerland, France, Brazil, Quebec, China, Russia, England, 
-and the U.S.
+SliTaz est fier d'être un projet communautaire et international, les 
+personnes du projet sont celles qui développent la distribution, 
+s'occupent du site Web corrigent les logiciels sur les dépôts Hg ou 
+écrivent de la documentation officielle. En passant par la Suisse, la 
+France, le Brésil, le Québec, la Chine, la Russie, l'Algérie, le 
+Royaume-Uni et les Etats-Unis: 
+
 </p>
 <ul>
 	<li>Christophe Lincoln</li>
@@ -233,8 +244,8 @@ and the U.S.
 	<li>...</li>
 </ul>
 <p>
-The project also wishes to thank all the reviewers, testers, hackers and users
-who have taken the time to help advance the distribution.
+Le projet tient également à remercier tous les commentateurs, testeurs, hackers et 
+utilisateurs qui on pris le temps d'aider de faire avancer la distribution.
 </p>
 
 <!-- End of content -->
