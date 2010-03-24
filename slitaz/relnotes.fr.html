@@ -2,7 +2,7 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-	<title>SliTaz 3.0 Release notes</title>
+	<title>SliTaz 3.0 Notes de version</title>
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="slitaz doc system releases notes information cooking" />
 	<meta name="expires" content="never" />
@@ -17,7 +17,7 @@
 <!-- Header and quick navigation -->
 <div id="header">
 	<a name="top"></a>
-	<h1><font color="#3E1220">SliTaz - System doc</font></h1>
+	<h1><font color="#3E1220">SliTaz - Documentation système</font></h1>
 </div>
 
 <div id="quicknav">
@@ -36,7 +36,7 @@
 
 <ul>
 	<li><a href="#overview">Présentation.</a></li>
-	<li><a href="#hardware">Matériel supporté.</a></li>
+	<li><a href="#hardware">Matériels supportés.</a></li>
 	<li><a href="#livecd">LiveCD Flavors.</a></li>
 	<li><a href="#toolchain">Noyau et toolchain.</a></li>
 	<li><a href="#utf-8">Support UTF-8.</a></li>
@@ -44,48 +44,48 @@
 	<li><a href="#install">Installation sur disque dur etLiveUSB.</a></li>
 	<li><a href="#packages">Software Packages.</a></li>
 	<li><a href="#desktop">Core Desktop.</a></li>
-	<li><a href="#upgrade">de la 2.0 à la 3.0.</a></li>
-	<li><a href="#people">Les membres du projets.</a></li>
+	<li><a href="#upgrade">De la 2.0 à la 3.0.</a></li>
+	<li><a href="#people">Les membres du projet.</a></li>
 </ul>
 
 <a name="overview"></a>
 <h3><font color="#6c0023"></font>Présentation</h3>
 <p>
-Bienvenue SliTaz 3.0! Petite, rapide, simple à utiliser et personnaliser,
-la nouvelle version de stable de SliTaz paraît après un an de développement.
+Bienvenue sur SliTaz 3.0 ! Petite, rapide, simple à utiliser et personnaliser,
+la nouvelle version stable de SliTaz paraît après un an de développement.
 
 </p>
 <ul>
-    <li>Scripts de démarrage réécrits et plus rapide</li>
+    <li>Scripts de démarrage réécris et plus rapides</li>
     <li>Amélioration des outils maison</li>
     <li>Better theme and integration</li>
     <li>Adoption de Midori comme navigateur par défaut</li>
-    <li>Meilleurs support du matériel. En particulier les cartes wiFi</li>
+    <li>Meilleur support de matériel. En particulier pour les cartes wiFi</li>
     <li>Virtualisation rapide avec lguest</li>
-    <li>SliTaz pro: OpenERP, LAMP, Glpi</li>
+    <li>SliTaz pro : OpenERP, LAMP, Glpi</li>
     <li>More contributors and stronger community</li>
     <li>Simple à personnaliser</li>
     <li>Les paquets sont compilés automatiquement par un robot (le build bot Tazbb)</li>
-    <li>900 paquets ajouté et beaucoup mis à jour</li>
+    <li>900 paquets ajoutés, et beaucoup mis-à-jour</li>
     <li>Plus de 2800 commits réalisés par les contributeurs</li>
 </ul>
 <p>
-L'assistance aux utilisateurs est assurés à travers une liste de diffusion et le forum officiel:
+L'assistance aux utilisateurs est assurée à travers une liste de diffusion et le forum officiel :
  <a href="http://forum.slitaz.org/">forum.slitaz.org</a>
 </p>
 
 <a name="hardware"></a>
 <h3><font color="#6c0023">Matériel supporté</font></h3>
 <p>
-SliTaz GNU/Linux supporte les machines à base de processeurs Intel i486 ou x86 .
-Un minimum de 192Mo de mémoire sont nécessaire pour utiliser le core LiveCD. 
+SliTaz GNU/Linux supporte les machines à base de processeurs Intel i486 ou x86.
+Un minimum de 192Mo de mémoire sont nécessaires pour utiliser le core LiveCD. 
 64Mo pour la saveur "slitaz-loram" flavor et 16Mo pour la saveur "slitaz-loram-cdrom".
 </p>
 <p>
 Avec la saveur slitaz-loram, le système est moins réactif, mais permet une installation de
-SliTaz en mode graphique sur de très vièlles machines.
-Une fois installé, SliTaz fontionne avec au minimum 16Mo de mémoire. 
-Mais oublié Firefox pour surfer sur Internet ! Préférez un navigateur en mode text, telque 'links' par exemple.
+SliTaz en mode graphique sur de très vieilles machines.
+Une fois installée, SliTaz fontionne avec au minimum 16Mo de mémoire. 
+Mais oubliez Firefox pour surfer sur Internet ! Préférez un navigateur en mode text, tel que 'links' par exemple.
 </p>
 <p>
 SliTaz 3.0 contient tous les pilotes et outils, comme 915resolution, pour fonctionner sur
@@ -114,11 +114,11 @@ Puis regénérez votre LiveCD avec l'outil "Tazlito".
 <a name="toolchain"></a>
 <h3><font color="#6c0023">Noyau et toolchain</font></h3>
 <p>
-SliTaz 3.0 est livrée avec la nouvelle toolchain qui a servie à 
+SliTaz 3.0 est livrée avec la nouvelle toolchain qui a servi à 
 recompiler tout le système.
 La version 2.6.30.6 du noyau Linux divisée en plusieurs paquets <who 
 is split in separate package for additionnal driver or features>.
-Certain pilotes ont été compiler dans le noyau pour en accélérer le 
+Certains pilotes ont été compilés dans le noyau pour en accélérer le 
 chargement.
 
 SliTaz 3.0 comes with a new but very well tested Kernel and a complete new
@@ -139,10 +139,10 @@ La nouvelle tootlchain inclue: Binutils 2.19.1, GCC 4.4.1, Glibc 2.10.1
 <a name="install"></a>
 <h3><font color="#6c0023">Installation sur disque dur et LiveUSB</font></h3>
 <p>
-The installation is fully automated and can be done graphically or in text
-mode. In this version the installer will let you use a separate partition for
-/home, configure root password and chose default user login. Installer now
-also support intallation from a LiveUSB session.
+L'installation est entièrement automatique et peut se faire graphiquement ou en mode text.
+Dans cette version l'installeur vous laissera choisir une partition séparée pour /home,
+le mot de passe de l'utilisateur root et l'ouverture de session par défaut.
+L'installeur prend aussi en charge l'installation depuis une session LiveUSB.
 </p>
 <p>
 Full USB install are also supported and some time needs a <code>rootdelay=10</code>
@@ -150,9 +150,9 @@ as a kernel argument (in GRUB menu.lst).
 </p>
 
 <a name="packages"></a>
-<h3><font color="#6c0023">Software Packages</font></h3>
+<h3><font color="#6c0023">Paquets logiciels</font></h3>
 <p>
-SliTaz 3.0 have 2291 package in the database, a wide variety of packages
+SliTaz 3.0 possède 2291 paquets dans sa base, une  grande variété de paquets on été introduita wide variety of packages
 have been commited and many force went to professionnal grade software such
 as OpenERP, MySQL, Glpi.
 </p>
@@ -220,7 +220,7 @@ Royaume-Uni et les Etats-Unis:
 <ul>
 	<li>Christophe Lincoln</li>
 	<li>Pascal Bellard</li>
-	<li>Eric Joseph-Alexandre</li>
+	<li>Éric Joseph-Alexandre</li>
 	<li>Paul Issott</li>
 	<li>Julien Rabier</li>
 	<li>Rohit Joshi</li>
@@ -245,7 +245,7 @@ Royaume-Uni et les Etats-Unis:
 </ul>
 <p>
 Le projet tient également à remercier tous les commentateurs, testeurs, hackers et 
-utilisateurs qui on pris le temps d'aider de faire avancer la distribution.
+utilisateurs qui ont pris le temps d'aider de faire avancer la distribution.
 </p>
 
 <!-- End of content -->
