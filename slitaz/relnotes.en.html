@@ -124,6 +124,14 @@ The new toolchain comprises of: Binutils 2.19.1, GCC 4.4.1, Glibc 2.10.1
 
 <a name="xorg"></a>
 <h3><font color="#6c0023">Xorg server</font></h3>
+<p>
+SliTaz now uses the Xorg X window system (although we will always try to 
+provide a Xvesa flavor). With the tazx utility you can reconfigure Xorg and 
+select the correct driver for your card. The xorg server comes with the vesa 
+driver by default which powers most cards; although you may still need to 
+manually configure your xorg.conf to some degree if you install some of the
+other drivers.
+</p>
 
 <a name="install"></a>
 <h3><font color="#6c0023">HD install and LiveUSB</font></h3>
@@ -133,10 +141,10 @@ mode. In this version the installer will let you use a separate partition for
 /home, configure the root password and chose the default user login. The installer also
 now supports installation from a LiveUSB session.
 </p>
-<p>
+<!--<p>
 Full USB install is also supported and some time is needed using <code>rootdelay=10</code>
 as a kernel argument (in GRUB menu.lst).
-</p>
+</p>-->
 
 <a name="packages"></a>
 <h3><font color="#6c0023">Software Packages</font></h3>
