@@ -51,7 +51,9 @@
 <a name="overview"></a>
 <h3><font color="#6c0023"></font>Overview</h3>
 <p>
-Welcome to SliTaz 3.0! Its simpler, faster, customizable, mightier and yet incredibly tiny. The new SliTaz stable version is now out after one year of development.  
+Welcome to SliTaz 3.0! Its simpler, faster, customizable, mightier and yet
+incredibly tiny. The new SliTaz stable version is now out after one year of
+development.  
 </p>
 <ul>
     <li>Boot scripts rewritten and supports super-fast booting</li>
@@ -61,7 +63,7 @@ Welcome to SliTaz 3.0! Its simpler, faster, customizable, mightier and yet incre
     <li>Better hardware support - wifi cards, webcams, 3G-modems, printers, scanners</li>
     <li>Better themes and desktop integration</li>
     <li>Faster virtualization with lguest</li>
-    <li>SliTaz pro: OpenERP, LAMP, Glpi</li>
+    <li>SliTaz pro: OpenERP, LAMP, GLPI and more</li>
     <li>Easier to customize liveCD and liveUSB with tazlitobox and tazusbbox</li>
     <li>Tazpkg supports new features including the conversion of deb/rpm/arch/slackware/ipk packages to Slitaz native format</li>
     <li>Packages are now automatically built by a build bot (Tazbb)</li>
@@ -88,24 +90,30 @@ have support for a wide range of netbooks (Eeepc, HP mini, Aspire One, etc).
 </p>
 
 <p>
-The slitaz-loram flavor allows to graphically install SliTaz on very old machines with constrained resources.
-The liveCD may be less responsive, but once installed, SliTaz works
-well with a minimum of 16MB memory. On very old machines, you may be better off
-using a text based browser such as 'links'.  
+The slitaz-loram flavor allows to graphically install SliTaz on very old 
+machines with constrained resources. The liveCD may be less responsive, 
+but once installed, SliTaz works well with a minimum of 16MB memory. On
+very old machines, you may be better off using a text based browser such
+as 'links'.  
 </p>
-
 
 <a name="livecd"></a>
 <h3><font color="#6c0023">LiveCD Flavors</font></h3>
 <p>
-SliTaz GNU/Linux is distributed as a bootable LiveCD. You can use the LiveCD as a normal system or you can 
-graphically install Slitaz to the hard drive. Installing/upgrading Slitaz retains your previous system's settings, applications and documents. 
+SliTaz GNU/Linux is distributed as a bootable LiveCD. You can use the LiveCD 
+as a normal system or you can graphically install Slitaz to the hard drive. 
+Installing/upgrading Slitaz retains your previous system's settings, applications
+and documents. 
 </p>
 <p>
 The LiveCD can also be customised and easily rebuilt both graphically or from
 the command line. Install your own custom set of packages, or simply use one
 of the preset flavors on the mirror. Then simply generate your distribution 
 with the "Tazlito" tool.
+</p>
+<p>
+The ISO image is now hydrid: it can be copied on a USB stick without formating
+it (using <code>dd</code>).
 </p>
 
 <a name="toolchain"></a>
@@ -148,25 +156,28 @@ mode. The slitaz installer now lets you use a separate partition for
 /home, configure the root password and chose the default user login. The installer also
 now supports installation from a LiveUSB session.
 </p>
-<!--<p>
+<p>
 Full USB install is also supported and some time is needed using <code>rootdelay=10</code>
-as a kernel argument (in GRUB menu.lst).
-</p>-->
+as a kernel argument (in GRUB menu.lst). The root delay will ensure the Kernel
+have detected the device before mounting it on / (root).
+</p>
 
 <a name="packages"></a>
 <h3><font color="#6c0023">Software Packages</font></h3>
 <p>
 SliTaz 3.0 has 2291 packages in the database. A wide variety of packages
-have been commited. 
-Tazpkg package manager also supports converting deb/rpm/arch/slackware/ipk packages to Slitaz native format
-A lot of time was also spent maintaining many professionnal grade software such as OpenERP, MySQL, GLPI.
+have been commited. Tazpkg package manager also supports converting 
+deb/rpm/arch/slackware/ipk packages to Slitaz native format
+A lot of time was also spent maintaining many professionnal grade software
+such as OpenERP, MySQL, GLPI.
 </p>
 <p>
 On the update side, mostly all the packages have been updated, including
 the kernel, the toolchain, Xorg (7.4), GTK and QT. Package format has
-also changed to support lzma for better compression and faster package downloads.
-Packages are also checked by Tazwok to ensure the FHS is followed. Packages are now built 
-automatically by the SliTaz Build Bot: <a href="http://bb.slitaz.org/">bb.slitaz.org</a>
+also changed to support lzma for better compression and faster package 
+downloads. Packages are also checked by Tazwok to ensure the FHS is followed.
+Packages are now built  automatically by the SliTaz Build Bot: 
+<a href="http://bb.slitaz.org/">bb.slitaz.org</a>
 </p>
 
 <a name="desktop"></a>
@@ -179,16 +190,17 @@ been created.
 <p>
 The core desktop provides a selection of multi-use packages for surfing the
 web, listening to music, audio editing, image manipulation and developing or 
-burning to optical media. One click application menu helps to find installed software by categories.
+burning to optical media. One click application menu helps to find installed
+software by categories.
 </p>
-
 
 <a name="security"></a>
 <h3><font color="#6c0023">Security</font></h3>
 <p>
-Slitaz is more secured and robust now. Firewall rules have been updated. A firewall can be installed using graphical tazhw box. 
-The serverbox can help to maintain the installed firewall. 
-Mountbox can manage crypto device with devmapper. Mountbox packages dependencies: dmsetup linux-md devmapper.
+Slitaz is more secured and robust now. Firewall rules have been updated. A
+firewall can be installed using graphical tazhw box. The serverbox can help
+to maintain the installed firewall. Mountbox can manage crypto device with
+devmapper. Mountbox packages dependencies: dmsetup linux-md devmapper.
 Crypt setup tools allow encryption of block devices.
 </p>
 
@@ -259,17 +271,18 @@ who have taken the time to help advance the distribution.
 
 <!-- Footer. -->
 <div id="footer">
-	<div class="footer-right"></div>
-	<a href="#top">Top of the page</a> | 
-	<a href="http://www.slitaz.org/en/doc/">Index of /usr/share/doc/slitaz</a>
+	<a href="#top">Top of the page</a> - Languages:
+	<a href="relnotes.en.html">en</a> |
+	<a href="relnotes.fr.html">fr</a> <!-- |
+	<a href="relnotes.pt.html">pt</a> -->
 </div>
 
 <div id="copy">
-	Copyright &copy; 2009 <a href="http://www.slitaz.org/">SliTaz</a> -
+	Copyright &copy; 2010 <a href="http://www.slitaz.org/">SliTaz</a> -
 	<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
-	Documentation published under
+	Documentation uder
 	<a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
-	and <a href="http://validator.w3.org/">xHTML 1.0 valid</a>.
+	and valid <a href="http://validator.w3.org/">xHTML 1.0</a>.
 </div>
 
 </body>
