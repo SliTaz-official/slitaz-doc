@@ -51,20 +51,19 @@
 <a name="overview"></a>
 <h3><font color="#6c0023"></font>Overview</h3>
 <p>
-Welcome to SliTaz 3.0! Its simpler, faster, customizable, mightier and yet
-incredibly tiny. The new SliTaz stable version is now out after one year of
-development.  
+Welcome to SliTaz 3.0! Small, fast, easy to use and customize, the new
+SliTaz stable version is now out after one year of development. 
 </p>
 <ul>
-    <li>Boot scripts rewritten and supports super-fast booting</li>
-    <li>Many new features included in all home-made boxes (tazctrlbox, tazhw, wifibox, burnbox, mountbox, netbox, serverbox, sliTaz installer)</li>
+    <li>Boot scripts rewritten and faster (super-fast booting)</li>
+    <li>All home-made boxes improved (tazctrlbox, tazhw, wifibox, burnbox, mountbox, netbox, serverbox, installer)</li>
     <li>Switch to Xorg from Xvesa</li>
     <li>Switch to Midori as the default web browser</li>
     <li>Better hardware support - wifi cards, webcams, 3G-modems, printers, scanners</li>
     <li>Better themes and desktop integration</li>
     <li>Faster virtualization with lguest</li>
     <li>SliTaz pro: OpenERP, LAMP, GLPI and more</li>
-    <li>Easier to customize liveCD and liveUSB with tazlitobox and tazusbbox</li>
+    <li>Easier to customize LiveCD and LiveUSB (tazlitobox and tazusbbox)</li>
     <li>Tazpkg supports new features including the conversion of deb/rpm/arch/slackware/ipk packages to Slitaz native format</li>
     <li>Packages are now automatically built by a build bot (Tazbb)</li>
     <li>More contributors and stronger community</li>
@@ -85,16 +84,14 @@ processors. A minimum 192MB of memory is recommended to use the core LiveCD.
 "slitaz-loram-cdrom" flavor.
 </p>
 <p>
+With the slitaz-loram flavor, the system is less responsive, but allows you to
+graphically install SliTaz on very old machines with limited resources. Once installed, SliTaz works
+well with a minimum of 16MB memory, but forget about using Firefox to surf the
+web - you'll have to use the text based 'links' for example. 
+</p>
+<p>
 SliTaz 3.0 provides all needed drivers and tools such as 915resolution to
 have support for a wide range of netbooks (Eeepc, HP mini, Aspire One, etc).
-</p>
-
-<p>
-The slitaz-loram flavor allows to graphically install SliTaz on very old 
-machines with constrained resources. The liveCD may be less responsive, 
-but once installed, SliTaz works well with a minimum of 16MB memory. On
-very old machines, you may be better off using a text based browser such
-as 'links'.  
 </p>
 
 <a name="livecd"></a>
@@ -112,8 +109,8 @@ of the preset flavors on the mirror. Then simply generate your distribution
 with the "Tazlito" tool.
 </p>
 <p>
-The ISO image is now hydrid: it can also be copied on a USB stick without formating
-it (using <code>dd</code>).
+The ISO image is now hydrid: it can also be copied onto an USB stick without formating
+(using <code>dd</code>).
 </p>
 
 <a name="toolchain"></a>
@@ -130,22 +127,23 @@ The new toolchain comprises of: Binutils 2.19.1, GCC 4.4.1, Glibc 2.10.1
 
 <a name="utf-8"></a>
 <h3><font color="#6c0023">UTF-8 support</font></h3>
-With this release, Slitaz community can enjoy full UTF-8 support.
-It uses standard PO files for the translation of all SliTaz related tools, boxes and utilities.
+With this release, the Slitaz community can enjoy full UTF-8 support.
+SliTaz uses standard PO files for the translation of all SliTaz related tools, boxes and utilities.
 With better internationalization support (russian, portuguese, chinese, and many more), 
 contributors can now use graphical tools such as poedit to make translations using GNU gettext standards. 
-The labs also have a i18n project to easily upload files to be included in the distribution. 
-The locale packs have more translated application(s) messages for the core system and 
+The labs also have an i18n project to easily upload files to be included in the distribution. 
+The locale packs have more translated application messages for the core system and 
 some extra packages for applications such as Gimp, Abiword, Gnumeric, etc.
 
 <a name="xorg"></a>
 <h3><font color="#6c0023">Xorg server</font></h3>
 <p>
-SliTaz now uses the Xorg X window system. With the tazx utility, you can reconfigure Xorg and 
+SliTaz now uses the Xorg X window system (although we will always try to 
+provide a Xvesa flavor). With the tazx utility you can reconfigure Xorg and 
 select the correct driver for your card. The xorg server comes with the vesa 
-driver by default which powers most cards. However, if you install some of the
-other xorg video drivers, you may need to manually configure your xorg.conf.
-We also hope that our growing community would be able to provide and support an official Xvesa flavor.
+driver by default which powers most cards; although you may still need to 
+manually configure your xorg.conf to some degree if you install some of the
+other drivers.
 </p>
 
 <a name="install"></a>
@@ -153,30 +151,30 @@ We also hope that our growing community would be able to provide and support an 
 <p>
 The installation is fully automated and can be done graphically or in text
 mode. The slitaz installer now lets you use a separate partition for
-/home, configure the root password and chose the default user login. The installer also
-now supports installation from a LiveUSB session.
+/home, configure the root password and chose the default user login. 
+The installer also now supports installation from a LiveUSB session.
 </p>
 <p>
-Full USB install is also supported and some time is needed using <code>rootdelay=10</code>
-as a kernel argument (in GRUB menu.lst). The root delay will ensure the Kernel
-have detected the device before mounting it on / (root).
+Full USB install is also supported using <code>rootdelay=10</code>
+as a kernel argument (in GRUB menu.lst). The root delay ensures the Kernel
+has detected the device before mounting it on / (root).
 </p>
 
 <a name="packages"></a>
 <h3><font color="#6c0023">Software Packages</font></h3>
 <p>
 SliTaz 3.0 has around 2300 packages in the database. A wide variety of packages
-have been commited. Tazpkg package manager also supports converting 
-deb/rpm/arch/slackware/ipk packages to Slitaz native format
-A lot of time was also spent maintaining many professionnal grade software
+have been commited and the Tazpkg package manager can now convert
+deb/rpm/arch/slackware/ipk packages to Slitaz native format (.tazpkg).
+A lot of time was also spent maintaining professional grade software
 such as OpenERP, MySQL, GLPI.
 </p>
 <p>
 On the update side, mostly all the packages have been updated, including
-the kernel, the toolchain, Xorg (7.4), GTK and QT. Package format has
-also changed to support lzma for better compression and faster package 
-downloads. Packages are also checked by Tazwok to ensure the FHS is followed.
-Packages are now built  automatically by the SliTaz Build Bot: 
+the kernel, toolchain, Xorg (7.4), GTK and QT. The package format has
+also changed to support lzma for better compression and faster 
+downloads. Packages are also checked by Tazwok to ensure the FHS is followed
+and packages are now built automatically by the SliTaz Build Bot: 
 <a href="http://bb.slitaz.org/">bb.slitaz.org</a>
 </p>
 
@@ -190,18 +188,17 @@ been created.
 <p>
 The core desktop provides a selection of multi-use packages for surfing the
 web, listening to music, audio editing, image manipulation and developing or 
-burning to optical media. One click application menu helps to find installed
-software by categories.
+burning to optical media. It's just one click in the application menu to find 
+installed software by category.
 </p>
 
 <a name="security"></a>
 <h3><font color="#6c0023">Security</font></h3>
 <p>
-Slitaz is more secured and robust now. Firewall rules have been updated. A
-firewall can be installed using graphical tazhw box. The serverbox can help
-to maintain the installed firewall. Mountbox can manage crypto device with
-devmapper. Mountbox packages dependencies: dmsetup linux-md devmapper.
-Crypt setup tools allow encryption of block devices.
+Slitaz is more secure and robust now and the firewall rules have been updated. A
+firewall can be installed using the graphical tazhw box, and serverbox can help
+to maintain the installed firewall. Mountbox can manage crypto devices with
+devmapper and the crypt setup tools allow encryption of block devices.
 </p>
 
 <a name="upgrade"></a>
