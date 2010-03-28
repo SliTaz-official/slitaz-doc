@@ -2,7 +2,7 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-	<title>SliTaz 3.0 Notes de version</title>
+	<title>SliTaz 3.0 note de publication</title>
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="slitaz doc system releases notes information cooking" />
 	<meta name="expires" content="never" />
@@ -44,6 +44,7 @@
 	<li><a href="#install">Installation sur disque dur etLiveUSB.</a></li>
 	<li><a href="#packages">Software Packages.</a></li>
 	<li><a href="#desktop">Core Desktop.</a></li>
+	<li><a href="#security">Sécurité.</a></li>
 	<li><a href="#upgrade">De la 2.0 à la 3.0.</a></li>
 	<li><a href="#people">Les membres du projet.</a></li>
 </ul>
@@ -62,8 +63,10 @@ la nouvelle version stable de SliTaz paraît après un an de développement.
     <li>Adoption de Midori comme navigateur par défaut</li>
     <li>Meilleur support de matériel. En particulier pour les cartes wiFi</li>
     <li>Virtualisation rapide avec lguest</li>
-    <li>SliTaz pro : OpenERP, LAMP, Glpi</li>
-    <li>More contributors and stronger community</li>
+    <li>SliTaz pro : OpenERP, LAMP, Glpi et plus</li>
+	<li>Les LiveCD et LiveUSB plus faciles à customiser (avec tazlitobox et tazusbbox)</li>
+    <li>De nouvelles fonctionnalités dans Tazpkg, incluant la convertion des paquets deb/rpm/arch/slackware/ipk au format Slitaz</li>
+    <li>Plus de contributeurs et une plus grande communauté</li>
     <li>Simple à personnaliser</li>
     <li>Les paquets sont compilés automatiquement par un robot (le build bot Tazbb)</li>
     <li>900 paquets ajoutés, et beaucoup mis-à-jour</li>
@@ -96,12 +99,8 @@ une large gamme de netbooks (Eeepc, HP mini, Aspire One etc.).
 <h3><font color="#6c0023">LiveCD à Saveurs</font></h3>
 <p>
 SliTaz GNU/Linux est distribuée sous la forme d'un LiveCD bootable qui peut être utilisé 
-comme un système nomad ou installé graphiquement sur le disque dur
-
-SliTaz GNU/Linux is distributed as a bootable LiveCD allowing you to use
-it as a nomad system or graphically install to the hard drive and retain
-the use of your previous system including all settings, applications, 
-documents, etc. 
+comme un système nomade ou installé graphiquement sur le disque dur.
+Lors de l'ionstallation ou mis à jour de sliTaz, les paramètres, les données et les applications sont conservées.
 </p>
 <p>
 Le LiveCD peut également être customisé et simplement reconstruit à 
@@ -110,31 +109,48 @@ Installez vos propres paquets, ou utilisez une saveur téléchargée
 depuis le mirroir. 
 Puis regénérez votre LiveCD avec l'outil "Tazlito".
 </p>
+<p>
+L'image ISO utilise maintenant un système ""Hybride"; elle peut être copiée sur une clé USB
+sans qu'il ne soit nécessaire de la formater (utilisez <code>dd</code> pour le faire).
+</p>
 
 <a name="toolchain"></a>
 <h3><font color="#6c0023">Noyau et toolchain</font></h3>
 <p>
 SliTaz 3.0 est livrée avec la nouvelle toolchain qui a servi à 
 recompiler tout le système.
-La version 2.6.30.6 du noyau Linux divisée en plusieurs paquets <who 
-is split in separate package for additionnal driver or features>.
+Le noyau Linux (2.6.30.6) divisé en plusieurs paquets contenants plus de pilotes
+et de fonctionnalitées.
 Certains pilotes ont été compilés dans le noyau pour en accélérer le 
 chargement.
-
-SliTaz 3.0 comes with a new but very well tested Kernel and a complete new
-toolchain from witch the all system is build. The Linux kernel version is 2.6.30.6
-who is split in separate package for additionnal driver or features. This time
-we also built-in some more drivers to have a faster kernel boot.
 </p>
 <p>
 La nouvelle tootlchain inclue: Binutils 2.19.1, GCC 4.4.1, Glibc 2.10.1
 </p>
 
 <a name="utf-8"></a>
-<h3><font color="#6c0023">UTF-8 support</font></h3>
+<h3><font color="#6c0023">Support de l'UTF-8</font></h3>
+Avec cette nouvelle version, la communauté peut pleinement profiter du support de l'UTF-8.
+SliTaz utilise les fichiers .PO pour la traduction de tous ses outils et boîtes de dialogues.
 
+
+With this release, the Slitaz community can enjoy full UTF-8 support.
+SliTaz uses standard PO files for the translation of all SliTaz related tools, boxes and utilities.
+Avec un meilleur support de l'internationalisation (russe, portugais, chinois, et beaucoup plus),
+les contributeurs peuvent utiliser des outils comme poedit et GNU gettext pour la traduction des outils.
+Un projet i18n a été créé dans les labs pour faciliter le téléchargement des fichiers à traduire.
+Les packs locale ont plus traduit les messages d'application pour le système central et
+quelques paquets supplémentaires pour des applications telles que Gimp, Abiword, Gnumeric, etc
 <a name="xorg"></a>
 <h3><font color="#6c0023">Serveur Xorg</font></h3>
+<p>
+SliTaz utilise désormais le gestionnaire de fenêtre Xorg ( nous essayerons malgrés tout 
+conserver une saveur Xvesa).
+Avec l'utilitaire tazx vous pouvez reconfigurer Xorg et choisir le bon pîlote pour votre carte vidéo.
+Par défaut Xorg est installé avec le driver vesa  qui fonctionne correctement
+ avec la plsupart des cartes; cependant vous pouvez être amené à modifier le fichier xorg.conf
+si vous installez d'autre pîàlote que celui là.
+</p>
 
 <a name="install"></a>
 <h3><font color="#6c0023">Installation sur disque dur et LiveUSB</font></h3>
@@ -145,65 +161,72 @@ le mot de passe de l'utilisateur root et l'ouverture de session par défaut.
 L'installeur prend aussi en charge l'installation depuis une session LiveUSB.
 </p>
 <p>
-Full USB install are also supported and some time needs a <code>rootdelay=10</code>
-as a kernel argument (in GRUB menu.lst).
+
+L'installation sur clé USB est aussi supportée et parfois vous devrez rajouter l'option <code>rootdelay=10</code>
+ au démarrage du noyau (dans le fichier menu.lst de GRUB).
+L'option rootdelay laisse le temps au Kernel de détecter tous les périphériques avant de monter la clé sur / (root).
 </p>
 
 <a name="packages"></a>
 <h3><font color="#6c0023">Paquets logiciels</font></h3>
 <p>
-SliTaz 3.0 possède 2291 paquets dans sa base, une  grande variété de paquets on été introduita wide variety of packages
-have been commited and many force went to professionnal grade software such
-as OpenERP, MySQL, Glpi.
+SliTaz 3.0 à environ 2300 paquets dans sa base.
+Une grande variété de paquets ont été ajoutés et le gestionnaire de paquets
+Tazpkg peut convertir les paquets deb/rpm/arch/slackware/ipk au SliTaz (.tazpkg).
+
+Beaucoup de temps a également été consacrées à la maintenance des logiciels de qualité professionnelle
+tels que OpenERP, MySQL, GLPI.
 </p>
 <p>
-On the update side, mainly all the packages have been update, including
-the kernel, all the toolchain, Xorg (7.4), GTK and QT. Package format have
-also changed and now use lzma for better compression. Packages are also
-checked by Tazwok to ensure FSH is followed and built automaticaly by 
-SliTaz Build Bot: <a href="http://bb.slitaz.org/">bb.slitaz.org</a>
+La pluspart des paquets ont été mis à jour. 
+Cela inclus le noyau, la toolchain, Xorg (7.4), GTK et QT.
+Le format des paquets à été remplacé par lzma pour une meilleurs compression.
+Les paquets sont vérifiés par Tazwok, pour la conformité à la FHS, et contruit automatiquement 
+par SliTaz build Bot: <a href="http://bb.slitaz.org/">bb.slitaz.org</a>
 </p>
 
 <a name="desktop"></a>
-<h3><font color="#6c0023">Core Desktop</font></h3>
+<h3><font color="#6c0023">Le Core Desktop</font></h3>
 <p>
-The core desktop provide a selection of multi-use packages for surfing the
-web, listening to music, audio editing, image manipulation, developing or 
-burning to optical media. It's just one click in the  application menu to
-find software installed by category.
+Le bureau de base contient une sélection de logiciels pour naviguer sur Internet, écouter de la musique, 
+manipuler du son, des images, programmer ou graver des CD-R.
+Il suffit d'un clic dans le menu de l'application pour trouver le logiciel classé par catégorie.
 </p>
 <p>
-A lot of attention have been ported the the core desktop, all applications
-are well integrate and a special SliTaz theme (icons, Openbox, GTK) have
-been done.
+Une grande attention à été apporté à l'apparance et à l'intégration des applications dans 
+le bureau et un nouveau thème SliTaz (icones, Openbox, GTK) à été crée pour l'occasion.
 </p>
-
 <a name="security"></a>
-<h3><font color="#6c0023">Security</font></h3>
+<h3><font color="#6c0023">Securité</font></h3>
 <p>
-packages + mountbox: dmsetup linux-md devmapper
+SliTaz est plus sûre et solide maintenant et les règles de pare-feu ont été mis à jour. Un
+pare-feu peut être installé en utilisant la boîte de tazhw graphique et serverbox peut aider
+de maintenir le pare-feu installé. Mountbox peuvent gérer les périphériques en cryptographie avec
+devmapper et les outils de configuration crypte permettre le chiffrement de périphériques de bloc.
 </p>
 
 <a name="upgrade"></a>
-<h3><font color="#6c0023">From 1.0 to 2.0</font></h3>
+<h3><font color="#6c0023">De la 2.0 à la 3.0</font></h3>
 <p>
-The SliTaz GNU/linux installer offers an update function allowing you to
-upgrade from a '2.0' to '3.0' version. To upgrade the system you first
-need to boot the 'Stable' LiveCD, launch the installer, select upgrade and then
-specify the partition containing the system that you want to update. The
-installer will then clean out the system and reinstall all the packages not
-present on the CD from the mirror. When this has finished you can reboot
-with your new version of SliTaz.
+L'install de SliTaz offre une fonction de mise à jour vous permettant de
+mettre à jour depuis une version '2 .0 'à '3 .0'.
+Pour mettre à niveau le système, démarrez «LiveCD stable», lancez le programme d'installation, puis sélectionnez
+l'option mise à niveau.
+Préciser la partition contenant le système que vous souhaitez mettre à jour. L'
+installeur nettoyera le système et réinstallera tous les paquets non
+présents sur le CD depuis miroir. Lorsque cela est terminé vous pouvez rebooter
+avec votre nouvelle version de SliTaz.
 </p>
 <p>
-Note that the installer will keep a copy of the list of packages and a complete
-archive of the /etc directory (etc.tar.gz) in /var/lib/slitaz-install.
+Notez que l'installeur garde une copie de la liste des paquets et une sauvegrade complète 
+du répertoire /etc (etc.tar.gz) dans /var/lib/slitaz-install.
 </p>
 <p>
-To upgrade a 2.0 to 3.0 it is also possible to use the package manager "Tazpkg" 
-via the 'set-release' function, but beware this is not yet proven and may 
-require some manual intervention. If you choose this way you must first
-install 'tazpkg' from 3.0, because package format have change.
+Pour migrer de la 2.0 à la 3.0, vous pouvez également utiliser l'option 'set-release' du gestionnaire de paquet "Tazpkg",
+Soyez averti que cette méthode n'est pas épprouvée et peut demander quelques 
+interventions manuelles de votre part.
+Si vous souhaîtez procéder ainsi ré-installez tazpkg depuis la version 3.0 de SliTaz, car 
+le format de compression des paquets à changés.
 </p>
 
 <a name="people"></a>
@@ -220,7 +243,7 @@ Royaume-Uni et les Etats-Unis:
 <ul>
 	<li>Christophe Lincoln</li>
 	<li>Pascal Bellard</li>
-	<li>Éric Joseph-Alexandre</li>
+	<li>Eric Joseph-Alexandre</li>
 	<li>Paul Issott</li>
 	<li>Julien Rabier</li>
 	<li>Rohit Joshi</li>
@@ -229,9 +252,12 @@ Royaume-Uni et les Etats-Unis:
 	<li>Mallory Mollo</li>
 	<li>Mike D. Smith</li>
 	<li>Allan Pinto</li>
+	<li>Matthew Sheets</li>
+	<li>Liu Peng</li>
 	<li>Alice Ayanami</li>
 	<li>F. Steiner</li>
 	<li>Chen Yufei</li>
+	<li>Jesse Lehman</li>
 	<li>Bill Nagel</li>
 	<li>Michael Dupont</li>
 	<li>Franco Azzano</li>
@@ -253,19 +279,19 @@ utilisateurs qui ont pris le temps d'aider de faire avancer la distribution.
 
 <!-- Footer. -->
 <div id="footer">
-	<div class="footer-right"></div>
-	<a href="#top">Top of the page</a> | 
-	<a href="http://www.slitaz.org/en/doc/">Index of /usr/share/doc/slitaz</a>
+	<a href="#top">Début de la page</a> - Autres languages:
+	<a href="relnotes.en.html">en</a> |
+	<a href="relnotes.fr.html">fr</a> |
+	<a href="relnotes.pt.html">pt</a> 
 </div>
 
 <div id="copy">
-	Copyright &copy; 2009 <a href="http://www.slitaz.org/">SliTaz</a> -
-	<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br>
-	Documentation published under
+	Copyright &copy; 2010 <a href="http://www.slitaz.org/">SliTaz</a> -
+	<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+	Documentation uder
 	<a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
-	and <a href="http://validator.w3.org/">xHTML 1.0 valid</a>.
+	and valid <a href="http://validator.w3.org/">xHTML 1.0</a>.
 </div>
 
 </body>
 </html>
-
