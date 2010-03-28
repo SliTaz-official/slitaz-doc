@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0068)http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.en.html -->
+<HTML xmlns="http://www.w3.org/1999/xhtml" xml:llang="cn" lang="cn"><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<TITLE>SliTaz 3.0 发行笔记</TITLE>
+	
+	<META name="description" content="slitaz doc system releases notes information cooking">
+	<META name="expires" content="never">
+	<META name="modified" content="2010-03-22 22:10:00">
+	<META name="publisher" content="www.slitaz.org">
+	<META name="author" content="Christophe Lincoln and uboat">
+	<LINK rel="shortcut icon" href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/favicon.ico">
+	<LINK rel="stylesheet" type="text/css" href="./SliTaz 3.0 Release notes_files/book.css">
+</HEAD><BODY bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<DIV id="header">
+	<A name="top"></A>
+	<H1><FONT color="#3E1220">SliTaz - 系统文档</FONT></H1>
+</DIV>
+
+<DIV id="quicknav">
+	SliTaz:
+	<A href="http://www.slitaz.org/">网站</A>
+	<A href="http://forum.slitaz.org/">论坛</A>
+	<A href="http://doc.slitaz.org/">文档</A>
+	<A href="http://pkgs.slitaz.org/">软件包</A>
+	<A href="http://labs.slitaz.org/">实验室</A>
+</DIV>
+
+<!-- Content. -->
+<DIV id="content">
+
+<H2><FONT color="#df8f06">发行笔记</FONT></H2>
+
+<UL>
+	<LI><A href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.en.html#overview">概况.</A></LI>
+	<LI><A href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.en.html#hardware">硬件支持.</A></LI>
+	<LI><A href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.en.html#livecd">LiveCD定制版.</A></LI>
+	<LI><A href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.en.html#toolchain">内核和编译工具.</A></LI>
+	<LI><A href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.en.html#utf-8">UTF-8编码支持.</A></LI>
+	<LI><A href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.en.html#xorg">Xorg图形服务器.</A></LI>
+	<LI><A href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.en.html#install">硬盘安装和LiveUSB.</A></LI>
+	<LI><A href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.en.html#packages">软件包.</A></LI>
+	<LI><A href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.en.html#desktop">核心桌面.</A></LI>
+	<LI><A href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.en.html#security">安全.</A></LI>
+	<LI><A href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.en.html#upgrade">从2.0升级到3.0.</A></LI>
+	<LI><A href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.en.html#people">项目开发人员.</A></LI>
+</UL>
+
+<A name="overview"></A>
+<H3><FONT color="#6c0023"></FONT>概况</H3>
+<P>
+欢迎使用SliTaz 3.0! 小巧, 快速, 易用和可定制的操作系统, 经过一年的开发,新的SliTaz稳定版就要发布了. 
+</P>
+<UL>
+    <LI>重写了启动脚本,和更快的启动速度 (超快速启动)</LI>
+    <LI>改善了所有自制工具盒子 (tazctrlbox, tazhw, wifibox, burnbox, mountbox, netbox, serverbox, installer)</LI>
+    <LI>从使用Xvesa改为使用Xorg </LI>
+    <LI>改为Midori作为默认浏览器</LI>
+    <LI>更好的硬件支持 - wifi无线网卡, 网络摄像头, 3G模块支持, 打印机, 扫描仪</LI>
+    <LI>更好的主题和桌面集成</LI>
+    <LI>采用lguest作为更快的虚拟化软件</LI>
+    <LI>SliTaz 专业软件: OpenERP, LAMP, GLPI 等</LI>
+    <LI>更加容易定制LiveCD和LiveUSB (tazlitobox and tazusbbox)</LI>
+    <LI>Tazpkg支持许多新的功能如转换 deb/rpm/arch/slackware/ipk 软件包为Slitaz格式</LI>
+    <LI>软件包由打包工具 (Tazbb)自动打包</LI>
+    <LI>更多的发行版和强大的社区支持</LI>
+    <LI>900个软件包添加到数据库,而且得到更新</LI>
+    <LI>各个发行版提供超过2800个技术支持</LI>
+</UL>
+<P>
+技术支持可以通过邮件列表和官方论坛 <A href="http://forum.slitaz.org/">forum.slitaz.org</A>
+</P>
+
+<A name="hardware"></A>
+<H3><FONT color="#6c0023">硬件支持</FONT></H3>
+<P>
+SliTaz GNU/Linux 支持所有i486或x86 Intel平台的计算机. 核心LiveCD需要最少内存192MB. 
+"slitaz-loram"低内存定制版需要最小内存为64MB,"slitaz-loram-cdrom" 低内存定制版需要最小内存为16MB .
+</P>
+<P>
+使用slitaz-loram低内存定制版, 虽然少了很多特性, 但可以让你图形安装SliTaz到你的老旧计算机上.
+ 一旦安装成功, SliTaz就可以在最少16MB的内存上良好运行 , 系统将不采用Firefox作为默认浏览器,
+你可以使用基于命令行的轻量级浏览器links. 
+</P>
+<P>
+SliTaz 3.0 提供所有需要的驱动和工具,如915resolution,可以支持更多系列的笔记本和上网本(Eeepc, HP mini, Aspire One, 等等).
+</P>
+
+<A name="livecd"></A>
+<H3><FONT color="#6c0023">LiveCD定制版</FONT></H3>
+<P>
+SliTaz GNU/Linux 采用可引导 LiveCD作为发布方式.你可以使用LiveCD作为一般系统,或者你可以图形化安装Slitaz到你的硬盘. 
+使用Installing/upgrading来升级你的Slitaz,可以保留你的系统设置,程序,和文档. 
+</P>
+<P>
+LiveCD可以采用图形方式或命令行方式进行定制和重制. 安装你需要的软件,或者从镜像下载定制好的一套软件. 然后使用"Tazlito"工具就可以生成你的系统了.
+</P>
+<P>
+ISO镜像使用 'hybrid'系统: 他可以被复制到U盘,而不用格式化 (使用 <CODE>dd</CODE>).
+</P>
+
+<A name="toolchain"></A>
+<H3><FONT color="#6c0023">内核和编译工具</FONT></H3>
+<P>
+SliTaz 3.0采用全新的经过测试的 2.6.30.6 Linux kernel内核,新版本的编译工具进行编译整个系统. 
+内核2.6.30.6 Linux kernel添加了许多linux软件包用于支持更多硬件和特性.
+我们内嵌了许多驱动用于提高内核引导速度.
+</P>
+<P>
+新的编译工具包括: Binutils 2.19.1, GCC 4.4.1, Glibc 2.10.1
+</P>
+
+<A name="utf-8"></A>
+<H3><FONT color="#6c0023">UTF-8 编码支持</FONT></H3>
+通过这次发布, Slitaz社区将全面支持UTF-8编码方式.
+SliTaz使用标准PO文件给slitaz相关的工具,盒子和附件用作翻译.
+更好的国际化支持 (俄语, 葡萄牙语, 汉语, 等等), 
+各个发行版可以通过图形工具poedit采用GNU gettext标准来做翻译工作. 
+slitaz实验室提供一个i18n项目可以上传各种用于发行版的翻译文件. 
+本地化包提供了许多针对核心系统,和软件如Gimp, Abiword, Gnumeric等的翻译信息.
+<A name="xorg"></A>
+<H3><FONT color="#6c0023">Xorg图形服务器</FONT></H3>
+<P>
+SliTaz 现在默认采用Xorg图形服务器 (我们也提供Xvesa版). 
+通过tazx工具,你可以配置Xorg和选择正确的显卡驱动. xorg也提供vesa驱动,以便驱动更多的显卡;
+如果你安装了什么特殊的显卡,你则需要手动配置你的xorg.conf.
+</P>
+
+<A name="install"></A>
+<H3><FONT color="#6c0023">硬盘安装和LiveUSB</FONT></H3>
+<P>
+安装过程可以通过图形方式和命令行方式自动进行.
+现在slitaz安装工具可以允许你使用不同分区安装/home文件夹,配置root密码和选择默认的用户登录. 
+也支持LiveUSB进行安装.
+</P>
+<P>
+全面支持各种USB安装,添加<CODE>rootdelay=10</CODE>到你的 GRUB menu.lst里. 
+在硬件被挂载到/ (root)以前root delay允许内核检测硬件 .
+</P>
+
+<A name="packages"></A>
+<H3><FONT color="#6c0023">软件包</FONT></H3>
+<P>
+SliTaz 3.0 软件库大约有 2300个软件包. 包含各种类型,还支持转换deb/rpm/arch/slackware/ipk格式软件包到Slitaz格式(.tazpkg).
+而且还提供专业级别的软件,如 OpenERP, MySQL, GLPI.
+</P>
+<P>
+在升级方面, 大多数软件包得到升级, 包括内核, 编译工具, Xorg (7.4), GTK and QT. 
+软件包格式工具也支持具有更高压缩比率和更快下载速度的lzma. 
+软件包由Tazwok检测以确保遵循相关FHS,并由SliTaz Build Bot自动打包生成: 
+<A href="http://bb.slitaz.org/">bb.slitaz.org</A>
+</P>
+
+<A name="desktop"></A>
+<H3><FONT color="#6c0023">核心桌面</FONT></H3>
+<P>
+我们花了很多精力在桌面环境上. 所有程序得到良好集成,创建了一个特别的SliTaz主题 (icons, Openbox, GTK) .
+</P>
+<P>
+核心桌面可以提供各种应用软件以供用户上网冲浪, 听音乐, 音频编辑, 图片浏览和编辑或烧录媒体文件.
+你只需要在程序菜单里通过分类找到软件,单击,就可以使用应用软件.
+</P>
+
+<A name="security"></A>
+<H3><FONT color="#6c0023">安全</FONT></H3>
+<P>
+Slitaz 现在变得更加安全和强健了,更新了防火墙规则.防火墙也可以通过图形工具tazhw box来安装, 
+serverbox服务盒子能帮助你控制安装好的防火墙. Mountbox挂载盒子能采用devmapper管理隐藏分区 和采用加密设置工具来加密分区.
+</P>
+
+<A name="upgrade"></A>
+<H3><FONT color="#6c0023">从 2.0 升级到 3.0</FONT></H3>
+<P>
+SliTaz GNU/linux 安装工具提供升级功能,是你能从 '2.0' 升级到 '3.0'. 
+首先引导计算机到3.0 LiveCD, 打开安装工具, 选择升级,然后填写你要升级的系统分区. 
+安装工具将会清除系统和从镜像里下载并重新安装所有原系统软件.
+当安装过程完毕,重启计算机就可以进入新的版本.
+</P>
+<P>
+注意:安装工具将会保存软件包列表和/etc文件夹(etc.tar.gz) 到/var/lib/slitaz-install.
+</P>
+<P>
+更新2.0到3.0还可以通过使用软件包管理器"Tazpkg"的'set-release'功能 , 
+但是需要注意的是这种方式不易操作,还需要很多手动操作. 
+如果你选择了这种方式,你首先的从3.0镜像源里新安装'tazpkg', 因为3.0软件包格式发生了变化.
+</P>
+
+<A name="people"></A>
+<H3><FONT color="#6c0023">项目开发人员</FONT></H3>
+<P>
+SliTaz是一个国际性的社区项目. 来自瑞士,法国,巴西,魁北克,中国,印度,俄罗斯,英国和美国的开发人员共同开发发行版, 修正网页,开发HG支持和撰写官方文档. 
+</P>
+<UL>
+	<LI>Christophe Lincoln</LI>
+	<LI>Pascal Bellard</LI>
+	<LI>Eric Joseph-Alexandre</LI>
+	<LI>Paul Issott</LI>
+	<LI>Julien Rabier</LI>
+	<LI>Rohit Joshi</LI>
+	<LI>Claudinei Pereira</LI>
+	<LI>Dominique Corbex</LI>
+	<LI>Mallory Mollo</LI>
+	<LI>Mike D. Smith</LI>
+	<LI>Allan Pinto</LI>
+	<LI>Matthew Sheets</LI>
+	<LI>Liu Peng</LI>
+	<LI>Alice Ayanami</LI>
+	<LI>F. Steiner</LI>
+	<LI>Chen Yufei</LI>
+	<LI>Jesse Lehman</LI>
+	<LI>Bill Nagel</LI>
+	<LI>Michael Dupont</LI>
+	<LI>Franco Azzano</LI>
+	<LI>Fabrice Thiroux</LI>
+	<LI>Eduardo Suarez-Santana</LI>
+	<LI>Tom Frankland</LI>
+	<LI>Sandeep Srinivasa</LI>
+	<LI>David Ozura</LI>
+	<LI>Pierre Romillon</LI>
+	<LI>...</LI>
+</UL>
+<P>
+slitaz项目也感谢所有花时间帮助我们改进发行版的评论者,测试者,黑客和用户.
+</P>
+
+<!-- End of content -->
+</DIV>
+
+<!-- Footer. -->
+<DIV id="footer">
+	<A href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.en.html#top">返回页首</A> - 语言:
+	<A href="./SliTaz 3.0 Release notes_files/SliTaz 3.0 Release notes.html">en</A> |
+	<A href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.fr.html">fr</A> |
+	<A href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.cn.html">cn</A> |
+	<A href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/relnotes.pt.html">pt</A> 
+</DIV>
+
+<DIV id="copy">
+	Copyright © 2010 <A href="http://www.slitaz.org/">SliTaz</A> -
+	<A href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</A>;<BR>
+	Documentation uder
+	<A href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</A>
+	and valid <A href="http://validator.w3.org/">xHTML 1.0</A>.
+</DIV>
+
+
+
+
+</BODY></HTML>
