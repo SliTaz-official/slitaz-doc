@@ -59,7 +59,7 @@ la nouvelle version stable de SliTaz paraît après un an de développement.
 <ul>
     <li>Scripts de démarrage réécrits et plus rapides</li>
     <li>Amélioration des outils maison</li>
-    <li>Amélioration de l'integration et des thèmes du Window manager</li>
+    <li>Amélioration de l'intégration et des thèmes du Window manager</li>
     <li>Adoption de Midori comme navigateur par défaut</li>
     <li>Meilleur support de matériel. En particulier pour les cartes WiFi</li>
     <li>Virtualisation rapide avec lguest</li>
@@ -81,7 +81,7 @@ L'assistance aux utilisateurs est assurée à travers une liste de diffusion et le
 <h3><font color="#6c0023">Matériel supporté</font></h3>
 <p>
 SliTaz GNU/Linux supporte les machines à base de processeurs Intel i486 ou x86.
-Un minimum de 192Mo de mémoire sont nécessaires pour utiliser le core LiveCD. 
+Un minimum de 192Mo de mémoire est nécessaire pour utiliser le core LiveCD. 
 80Mo pour la saveur "slitaz-loram" flavor et 16Mo pour la saveur "slitaz-loram-cdrom".
 </p>
 <p>
@@ -119,7 +119,7 @@ sans qu'il ne soit nécessaire de la formater (utilisez <code>dd</code> pour le f
 <p>
 SliTaz 3.0 est livrée avec la nouvelle toolchain qui a servi à 
 recompiler tout le système.
-Le noyau Linux (2.6.30.6) divisé en plusieurs paquets contenants plus de pilotes
+Le noyau Linux (2.6.30.6) est divisé en plusieurs paquets contenants plus de pilotes
 et de fonctionnalités.
 Certains pilotes ont été compilés dans le noyau pour en accélérer le 
 chargement.
@@ -136,11 +136,11 @@ Avec un meilleur support de l'internationalisation (russe, portugais, chinois, e
 les contributeurs peuvent utiliser des outils comme poedit et GNU gettext pour la traduction des outils.
 Un projet i18n a été créé dans les labs pour faciliter le téléchargement des fichiers à traduire.
 Les packs locale ont plus de messages d'application traduits pour le système central et
-quelques paquets supplémentaires pour des applications telles que Gimp, Abiword, Gnumeric, etc
+quelques paquets supplémentaires pour des applications telles que Gimp, Abiword, Gnumeric, etc...
 <a name="xorg"></a>
 <h3><font color="#6c0023">Serveur Xorg</font></h3>
 <p>
-SliTaz utilise désormais le gestionnaire de fenêtre Xorg ( nous essayerons malgrés tout 
+SliTaz utilise désormais le gestionnaire de fenêtre Xorg ( nous essayerons malgré tout de
 conserver une saveur Xvesa).
 Avec l'utilitaire tazx vous pouvez reconfigurer Xorg et choisir le bon pilote pour votre carte vidéo.
 Par défaut Xorg est installé avec le driver vesa  qui fonctionne correctement
@@ -167,7 +167,7 @@ L'option rootdelay laisse le temps au Kernel de détecter tous les périphériques 
 <h3><font color="#6c0023">Paquets logiciels</font></h3>
 <p>
 SliTaz 3.0 à environ 2300 paquets dans sa base.
-Une grande variété de paquets ont été ajoutés et le gestionnaire de paquets
+Une grande variété de paquets a été ajoutée et le gestionnaire de paquets
 Tazpkg peut convertir les paquets deb/rpm/arch/slackware/ipk au format SliTaz (.tazpkg).
 
 Beaucoup de temps a également été consacré à la maintenance des logiciels de qualité professionnelle
@@ -176,8 +176,8 @@ tels que OpenERP, MySQL, GLPI.
 <p>
 La pluspart des paquets ont été mis à jour. 
 Cela inclus le noyau, la toolchain, Xorg (7.4), GTK et QT.
-Le format des paquets à été remplacé par lzma pour une meilleurs compression.
-Les paquets sont vérifiés par Tazwok, pour la conformité à la FHS, et contruit automatiquement 
+Le format des paquets à été remplacé par lzma pour une meilleure compression.
+Les paquets sont vérifiés par Tazwok, pour la conformité à la FHS, et construits automatiquement 
 par SliTaz build Bot: <a href="http://bb.slitaz.org/">bb.slitaz.org</a>
 </p>
 
@@ -198,14 +198,14 @@ le bureau et un nouveau thème SliTaz (icones, Openbox, GTK) à été créé pour l'oc
 SliTaz est plus sûre et solide maintenant et les règles de pare-feu ont été mises à jour. Un
 pare-feu peut être installé en utilisant la boîte de tazhw graphique et serverbox peut aider
 à maintenir le pare-feu installé. Mountbox peut gérer les périphériques en cryptographie avec
-devmapper et les outils de configuration crypte permettrent le chiffrement des périphériques de bloc.
+devmapper et les outils de configuration permettrent le chiffrement des périphériques de bloc.
 </p>
 
 <a name="upgrade"></a>
 <h3><font color="#6c0023">De la 2.0 à la 3.0</font></h3>
 <p>
-L'install de SliTaz offre une fonction de mise à jour vous permettant de
-mettre à jour depuis une version '2 .0' à '3 .0'.
+L'installeur de SliTaz offre une fonction de mise à jour vous permettant de
+mettre à jour depuis une version '2.0' à '3.0'.
 Pour mettre à niveau le système, démarrez «LiveCD stable», lancez le programme d'installation, puis sélectionnez
 l'option mise à niveau.
 Préciser la partition contenant le système que vous souhaitez mettre à jour. L'
@@ -214,14 +214,14 @@ présents sur le CD depuis le miroir. Lorsque cela est terminé vous pouvez reboot
 avec votre nouvelle version de SliTaz.
 </p>
 <p>
-Notez que l'installeur garde une copie de la liste des paquets et une sauvegrade complète 
+Notez que l'installeur garde une copie de la liste des paquets et une sauvegarde complète 
 du répertoire /etc (etc.tar.gz) dans /var/lib/slitaz-install.
 </p>
 <p>
 Pour migrer de la 2.0 à la 3.0, vous pouvez également utiliser l'option 'set-release' du gestionnaire de paquet "Tazpkg",
 Soyez averti que cette méthode n'est pas éprouvée et peut demander quelques 
 interventions manuelles de votre part.
-Si vous souhaîtez procéder ainsi ré-installez tazpkg depuis la version 3.0 de SliTaz, car 
+Si vous souhaîtez procéder ainsi, ré-installez tazpkg depuis la version 3.0 de SliTaz, car 
 le format de compression des paquets a changé.
 </p>
 
