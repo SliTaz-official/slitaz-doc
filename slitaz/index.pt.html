@@ -1,201 +1,181 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>SliTaz - Documentação do Sistema</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-	<meta name="description" content="slitaz doc system releases notes information cooking" />
-	<meta name="expires" content="never" />
-	<meta name="modified" content="2010-09-03 22:30:00" />
-	<meta name="publisher" content="www.slitaz.org" />
-	<meta name="author" content="Christophe Lincoln"/>
+	<title>SliTaz - System doc (fr)</title>
+	<meta charset="utf-8" />
 	<link rel="shortcut icon" href="favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="book.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body bgcolor="#ffffff">
+<body>
 
-<!-- Header and quick navigation -->
+<!-- Header -->
 <div id="header">
-    <a name="top"></a>
-    <h1><font color="#3E1220">SliTaz - Documentação do Sistema</font></h1>
+	<h1>SliTaz - System doc</h1>
 </div>
 
-<div id="quicknav">
-	SliTaz:
-	<a href="http://www.slitaz.org/">Website</a>
-	<a href="http://forum.slitaz.org/">Fórum</a>
-	<a href="http://doc.slitaz.org/">Documentação</a>
-	<a href="http://pkgs.slitaz.org/">Pacotes</a>
-	<a href="http://labs.slitaz.org/">Labs</a>
+<!-- Languages -->
+<div id="lang">
+	<a href="http://www.slitaz.org/i18n.php">
+		<img src="images/locale.png" alt="locale.png" /></a>
+	<a href="index.cn.html">cn</a>
+	<a href="index.de.html">de</a>
+	<a href="index.en.html">en</a>
+	<a href="index.fr.html">fr</a>
+	<a href="index.hu.html">hu</a>
+	<a href="index.pt.html">pt</a>
 </div>
 
 <!-- Content. -->
 <div id="content">
 
-<h2><font color="#DF8F06">Documentação (pt)</font></h2>
-
+<h2>DocumentaÃ§Ã£o (pt)</h2>
 
 <p>
-A versão de testes (cooking) do SliTaz não fornece notas de lançamento, 
-qualquer mudança para esta versão é anunciada no website e o 
-<a href="http://labs.slitaz.org/">SliTaz Labs</a> traz as últimas notícias 
-e atividades do projeto. Assim como na versão estável, você irá obter 
-informações sobre a versão de testes no website e suporte no 
-<a href="http://forum.slitaz.org/">fórum</a> do projeto.
+	A versÃ£o de testes (cooking) do SliTaz nÃ£o fornece notas de lanÃ§amento, 
+	qualquer mudanÃ§a para esta versÃ£o Ã© anunciada no website e o 
+	<a href="http://scn.slitaz.org/">SliTaz Blog</a> traz as Ãºltimas notÃ­cias 
+	e atividades do projeto. Assim como na versÃ£o estÃ¡vel, vocÃª irÃ¡ obter 
+	informaÃ§Ãµes sobre a versÃ£o de testes no website e suporte no 
+	<a href="http://forum.slitaz.org/">fÃ³rum</a> do projeto.
 </p>
 
 
 <!--<p>
-O SliTaz GNU/Linux versão estável é distribuido com os manuais das 
-ferramentas do projetos e <a href="relnotes.pt.html">Notas de Lançamento</a>
-instalados no sistema. Os manuais e esta página podem ser acessados por
+O SliTaz GNU/Linux versÃ£o estÃ¡vel Ã© distribuido com os manuais das 
+ferramentas do projetos e <a href="relnotes.pt.html">Notas de LanÃ§amento</a>
+instalados no sistema. Os manuais e esta pÃ¡gina podem ser acessados por
 meio do menu. Por favor acesse a 
-<a href="http://www.slitaz.org/pt/">página do projeto</a> para informações
-gerais sobre o SliTaz. Para usar e configurar o sistema você pode ler o
+<a href="http://www.slitaz.org/pt/">pÃ¡gina do projeto</a> para informaÃ§Ãµes
+gerais sobre o SliTaz. Para usar e configurar o sistema vocÃª pode ler o
 <a href="http://doc.slitaz.org/pt:handbook:start">Manual</a>. Pode-se
-obter suporte na nossa lista de discussão ou no
-<a href="http://forum.slitaz.org/">Fórum</a>.
+obter suporte na nossa lista de discussÃ£o ou no
+<a href="http://forum.slitaz.org/">FÃ³rum</a>.
 </p>-->
 
 <ul>
 	<li><a href="#start">Primeiros Passos</a></li>
-	<!--<li><a href="relnotes.pt.html">Notas de Lançamento para a versão 3.0</a></li>-->
-	<li><a href="http://doc.slitaz.org/pt:start">Documentação Online</a></li>
+	<!--<li><a href="relnotes.pt.html">Notas de LanÃ§amento para a versÃ£o 3.0</a></li>-->
+	<li><a href="http://doc.slitaz.org/pt:start">DocumentaÃ§Ã£o Online</a></li>
 </ul>
 
 <a name="start"></a>
-<h2><font color="#DF8F06">Primeiros Passos</font></h2>
+<h2>Primeiros Passos</h2>
 
 <a name="network"></a>
-<h3>Conexão de Rede</h3>
+<h3>ConexÃ£o de Rede</h3>
 <p>
 Clique no "Network Status Monitor" (Monitor de Status da Rede) na parte
-de baixo e direita da tela, em "Configure" e então o netbox (gerenciador
-de rede) será executado. Você pode ir até a aba "DHCP" e clicar em "Start",
-e o SliTaz irá enviar uma requisição DHCP para o roteador local. Você
-também pode configurar ip estático, PPPoE, PPP, VPN e mais usando as 
-respectivas abas. Para configurar conexões wireless (sem fio) você pode
+de baixo e direita da tela, em "Configure" e entÃ£o o netbox (gerenciador
+de rede) serÃ¡ executado. VocÃª pode ir atÃ© a aba "DHCP" e clicar em "Start",
+e o SliTaz irÃ¡ enviar uma requisiÃ§Ã£o DHCP para o roteador local. VocÃª
+tambÃ©m pode configurar ip estÃ¡tico, PPPoE, PPP, VPN e mais usando as 
+respectivas abas. Para configurar conexÃµes wireless (sem fio) vocÃª pode
 usar o aplicativo wifibox clicando em "Wireless Manager" (Gerenciador
 de Redes Wireless) que se localiza no Gerenciador de Rede ou indo na
 entrada de menu "Ferramentas do Sistema" -> "Gerenciador de Redes Wireless".
 </p>
 <p>
-Maiores informações podem ser encontradas no Manual Do Slitaz: 
+Maiores informaÃ§Ãµes podem ser encontradas no Manual Do Slitaz: 
 <a href="http://doc.slitaz.org/pt:handbook:networkconf"
-	>Configuração de Rede</a>
+	>ConfiguraÃ§Ã£o de Rede</a>
 </p>
 
 <a name="apps"></a>
 <h3>Aplicativos</h3>
 <p>
-Para obter uma lista de todos os aplicativos gráficos você pode usar
-o botão de Menu do SliTaz na parte de baixo e esquerda da tela. Para uma
+Para obter uma lista de todos os aplicativos grÃ¡ficos vocÃª pode usar
+o botÃ£o de Menu do SliTaz na parte de baixo e esquerda da tela. Para uma
 lista das ferramentas de linha de comando, pode abrir o terminal e clicar
 por duas vezes a tecla Tab. Para ter uma lista de todos os pacotes de 
 aplicativo instalados use o gerenciador de pacotes, iniciando-o pelo seu 
-ícone na parte de baixo e direita ou pelo menu "Ferramentas do Sistema". 
-Para instalar um novo pacote deve-se possuir ou uma conexão de rede ou
-o DVD que contém todos os pacotes ou um dispositivo USB que contenha 
-pacotes baixados de outra máquina. O gerenciador de pacotes também pode
+Ã­cone na parte de baixo e direita ou pelo menu "Ferramentas do Sistema". 
+Para instalar um novo pacote deve-se possuir ou uma conexÃ£o de rede ou
+o DVD que contÃ©m todos os pacotes ou um dispositivo USB que contenha 
+pacotes baixados de outra mÃ¡quina. O gerenciador de pacotes tambÃ©m pode
 ser utilizado na linha de comando, abrindo o terminal e digitando 
 <code>tazpkg</code>.
 </p>
 
 <a name="office"></a>
-<h3>Suíte de Escritório</h3>
+<h3>SuÃ­te de EscritÃ³rio</h3>
 <p>
-O SliTaz fornece em seu repositório de pacotes alguns aplicativos de 
-escritório leves. Todos estes pacotes podem ser instalados com alguns
-cliques a partir do gerenciador de pacotes. O SliTaz também fornece
-uma maneira simples de instalar a famosa e poderosa suíte de escritório
-OpenOffice: busque por OpenOffice no gerenciador de pacotes, dê um duplo
-clique em "get-OpenOffice3" e instale o script deixando a opção
+O SliTaz fornece em seu repositÃ³rio de pacotes alguns aplicativos de 
+escritÃ³rio leves. Todos estes pacotes podem ser instalados com alguns
+cliques a partir do gerenciador de pacotes. O SliTaz tambÃ©m fornece
+uma maneira simples de instalar a famosa e poderosa suÃ­te de escritÃ³rio
+OpenOffice: busque por OpenOffice no gerenciador de pacotes, dÃª um duplo
+clique em "get-OpenOffice3" e instale o script deixando a opÃ§Ã£o
 <code>Auto exec</code> selecionada.
 </p>
 <p>
-Para ter uma suíte de escritório leve utilize o Abiword como processador
+Para ter uma suÃ­te de escritÃ³rio leve utilize o Abiword como processador
 de textos, o Gnumeric para planilhas e o Homebank para genenciar contas
-bancárias.
+bancÃ¡rias.
 </p>
 
 <a name="multimedia"></a>
-<h3>Multimídia</h3>
+<h3>MultimÃ­dia</h3>
 <p>
 A maioria das variantes (flavors) do SliTaz incluem uma vasta gama de 
-drivers de placas de som, um mixer de volume e um reprodutor de áudio 
-leve que permite executar arquivos MP3 e OGG. A placa de som é detectada
-automaticamente durante o boot e o suporte a áudio funciona sem maiores
-problemas na maioria dos sistemas. Se você adicionar um novo usuário e
-este não puder ouvir o áudio, certifique-se que ele pertença ao grupo
-<code>audio</code>. Se ocorrer algum problema leia a documentação no site
-e utilize o fórum de discussão para obter ajuda.
+drivers de placas de som, um mixer de volume e um reprodutor de Ã¡udio 
+leve que permite executar arquivos MP3 e OGG. A placa de som Ã© detectada
+automaticamente durante o boot e o suporte a Ã¡udio funciona sem maiores
+problemas na maioria dos sistemas. Se vocÃª adicionar um novo usuÃ¡rio e
+este nÃ£o puder ouvir o Ã¡udio, certifique-se que ele pertenÃ§a ao grupo
+<code>audio</code>. Se ocorrer algum problema leia a documentaÃ§Ã£o no site
+e utilize o fÃ³rum de discussÃ£o para obter ajuda.
 </p>
 <p>
-Vídeos podem ser assistidos instalando um único pacote ou usando um LiveCD
-ou LiveUSB dedicado à multimídia. A equipe do SliTaz empacotou alguns dos
-melhores reprodutores de vídeo disponíveis para GNU/Linux: <code>mplayer</code>,
+VÃ­deos podem ser assistidos instalando um Ãºnico pacote ou usando um LiveCD
+ou LiveUSB dedicado Ã  multimÃ­dia. A equipe do SliTaz empacotou alguns dos
+melhores reprodutores de vÃ­deo disponÃ­veis para GNU/Linux: <code>mplayer</code>,
 <code>xine-ui</code> e <code>vlc</code>.
 </p>
 
 <a name="info"></a>
-<h3>Informações do Sistema</h3>
+<h3>InformaÃ§Ãµes do Sistema</h3>
 <p>
-você pode obter informações sobre seu sistema abrindo o menu e clicando
-em "Ferramentas do Sistema" -> "Informações e Testes do Sistema" e então,
-quando o programa abrir, clicar em "Summary". Clicar em outras opções
-trará informações mais detalhadas, e usando os benchmarks lhe dará uma
-idéia de quão rápido é o seu sistema. Para obter uma lista e controlar
-todos os processos que estão rodando você pode usar o "Gerenciador de 
+vocÃª pode obter informaÃ§Ãµes sobre seu sistema abrindo o menu e clicando
+em "Ferramentas do Sistema" -> "InformaÃ§Ãµes e Testes do Sistema" e entÃ£o,
+quando o programa abrir, clicar em "Summary". Clicar em outras opÃ§Ãµes
+trarÃ¡ informaÃ§Ãµes mais detalhadas, e usando os benchmarks lhe darÃ¡ uma
+idÃ©ia de quÃ£o rÃ¡pido Ã© o seu sistema. Para obter uma lista e controlar
+todos os processos que estÃ£o rodando vocÃª pode usar o "Gerenciador de 
 Processos".
 </p>
 
 <a name="root"></a>
-<h3>Tornando-se usuário root</h3>
+<h3>Tornando-se usuÃ¡rio root</h3>
 <p>
-Por padrão o SliTaz não executa o ambiente desktop como o usuário 
-administrador root: sempre é pedida a senha do root (a padrão é 
+Por padrÃ£o o SliTaz nÃ£o executa o ambiente desktop como o usuÃ¡rio 
+administrador root: sempre Ã© pedida a senha do root (a padrÃ£o Ã© 
 <code>root</code>) para cada tarefa de gerenciamento do sistema e que
-possa ser potencialmente danosa. Isto traz uma certa segurança para o 
-usuário. Para se tornar root abra o terminal, digite <code>su</code>
+possa ser potencialmente danosa. Isto traz uma certa seguranÃ§a para o 
+usuÃ¡rio. Para se tornar root abra o terminal, digite <code>su</code>
 e informe a senha do root.
 </p>
 
 <a name="install"></a>
-<h3>Instalação</h3>
+<h3>InstalaÃ§Ã£o</h3>
 <p>
-O SliTaz pode ser instalado no disco rígido ou em um drive usb utilizando
+O SliTaz pode ser instalado no disco rÃ­gido ou em um drive usb utilizando
 o "Instalador do SliTaz" que se encontra no menu "Ferramentas do Sistema".
-Este utilitário faz uma instalação completa do SliTaz no disco rígido.
-Assim, o SliTaz não será mais carregado na memória RAM como no modo LiveCD
-ou Frugal e todas as alterações serão persistentes.
+Este utilitÃ¡rio faz uma instalaÃ§Ã£o completa do SliTaz no disco rÃ­gido.
+Assim, o SliTaz nÃ£o serÃ¡ mais carregado na memÃ³ria RAM como no modo LiveCD
+ou Frugal e todas as alteraÃ§Ãµes serÃ£o persistentes.
 </p>
 <p>
-Para criar um sistema LiveUSB você pode usar o "Tazusb LiveUSB Tool" no
+Para criar um sistema LiveUSB vocÃª pode usar o "Tazusb LiveUSB Tool" no
 menu "Ferramentas do Sistema" ou digitar <code>tazusb</code> na linha de
-comando. Maiores informações podem ser encontradas no Manual do SliTaz:
-<a href="http://doc.slitaz.org/pt:handbook:liveusb">Mídia LiveUSB</a>
+comando. Maiores informaÃ§Ãµes podem ser encontradas no Manual do SliTaz:
+<a href="http://doc.slitaz.org/pt:handbook:liveusb">MÃ­dia LiveUSB</a>
 </p>
 
 <!-- End of content -->
 </div>
 
-<!-- Footer. -->
 <div id="footer">
-	<a href="#top">Topo da Página</a> - Outras Línguas:
-	<a href="index.cn.html">cn</a> |
-	<a href="index.de.html">de</a> |
-	<a href="index.en.html">en</a> |
-	<a href="index.fr.html">fr</a> |
-	<a href="index.hu.html">hu</a> |
-	<a href="index.pt.html">pt</a>
-</div>
-
-<div id="copy">
-	Copyright &copy; 2010 <a href="http://www.slitaz.org/">SliTaz</a> -
-	<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
-	Documentation under
-	<a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
-	and valid <a href="http://validator.w3.org/">xHTML 1.0</a>.
+	Copyright &copy; 2011 <a href="http://www.slitaz.org/">SliTaz GNU/Linux</a>
 </div>
 
 </body>
