@@ -3,5 +3,5 @@ Name=Documentation
 Name[pt]=Documentação
 Name[pt_BR]=Documentação
 Exec=browser file:///usr/share/doc/slitaz/index.html
-Icon=slitaz-doc.png
+Icon=slitaz-doc
 Type=Application
