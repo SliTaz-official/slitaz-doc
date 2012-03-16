@@ -1,1 +1,184 @@
-index.en.html
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>SliTaz - System doc (en)</title>
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<!-- Header -->
+<div id="header">
+	<h1>SliTaz - System doc</h1>
+</div>
+
+<!-- Languages -->
+<div id="lang">
+	<a href="http://www.slitaz.org/i18n.php">
+		<img src="images/locale.png" alt="locale.png" /></a>
+	<a href="index.cn.html">cn</a>
+	<a href="index.de.html">de</a>
+	<a href="index.en.html">en</a>
+	<a href="index.fr.html">fr</a>
+	<a href="index.hu.html">hu</a>
+	<a href="index.pt_BR.html">pt</a>
+</div>
+
+<!-- Content. -->
+<div id="content">
+
+<h2>Documentation (en)</h2>
+
+<p>
+	The Cooking version doesn't provide any Release Notes, major changes are
+	announced on the web site and the <a href="http://scn.slitaz.org/">Blog</a>
+	provides fresh news about the project's activity. Like the stable version,
+	you will find <a href="http://doc.slitaz.org/">documentation</a> on the
+	wiki site and support on the community
+	<a href="http://forum.slitaz.org/">forum</a>.
+</p>
+
+<!--<p>
+The SliTaz GNU/Linux stable release is published with the project tools,
+manuals and <a href="relnotes.en.html">Release Notes</a> installed on
+the system. Manuals and this page are accessible through the standard menu.
+Please check the <a href="http://www.slitaz.org/en/">project page</a> for
+general information about SliTaz. To start to use and configure the system, 
+you can read the <a href="http://doc.slitaz.org/en:handbook:start">Handbook</a>.
+Support can be found on the SliTaz mailing list or the community 
+<a href="http://forum.slitaz.org/">Forum</a>. 
+</p>-->
+
+<ul>
+	<li><a href="#start">Getting started guide</a></li>
+	<!--<li><a href="relnotes.en.html">Release Notes for 3.0</a> -
+	<a href="relnotes.cn.html">cn</a> |
+	<a href="relnotes.en.html">en</a> |
+	<a href="relnotes.es.html">es</a> |
+	<a href="relnotes.fr.html">fr</a> |
+	<a href="relnotes.pt.html">pt</a></li>-->
+	<li><a href="http://doc.slitaz.org/en:start">Online Documentation</a></li>
+</ul>
+
+<a name="start"></a>
+<h2>Getting started</h2>
+
+<a name="tazpanel"></a>
+<h3>SliTaz Panel</h3>
+<p>
+	From spring 2011 the new way (and tool) to configure the system is TazPanel.
+	It is a CGI/web interface with a themable user interface from where you
+	can control your entire system, this includes package management, adding or
+	removing users, creating Live systems and much more. Each page provides
+	a small description to help you manage your SliTaz system. To access the
+	panel you can use the menu entry in "System Tools" or this url:
+</p>
+<p>
+	<a href="http://tazpanel:82">http://tazpanel:82</a>
+</p>
+
+<a name="network"></a>
+<h3>Network connections</h3>
+<p>
+Click on the "Network Status Monitor" at the bottom right of the screen, then
+"Configure" and the network manager (netbox) will come up. You can then
+go to the "DHCP" tab and click "Start", and Slitaz will send a DHCP request 
+to the local router. You may also setup a static IP, PPPoE, PPP, VPN and 
+other networking options by using their respective tabs. To configure a wireless 
+connection, you can use SliTaz wifibox by clicking "Wireless Manager" in the 
+Network Manager or by using the "System Tools" menu entry -> "Wireless networks 
+connections".
+</p>
+<p>
+More detailed information can be found in the Handbook: 
+<a href="http://doc.slitaz.org/en:handbook:networkconf"
+	>Network configuration</a>
+</p>
+
+<a name="apps"></a>
+<h3>Applications</h3>
+<p>
+To have a list of all graphical applications, you can use the SliTaz menu button 
+at the bottom left of the screen. To have a list of command line tools, you
+can open a terminal and double press on the tabulation button. And to have
+a list of all installed packages, you can launch the package manager user interface
+from the Lxpanel icon or by using the "System Tools" menu entry. To install any new packages,
+you must have a network connection, the DVD of packages or an USB storage device 
+containing any downloaded packages. Naturally any package management
+can also be done from the command line and <code>tazpkg</code>.
+</p>
+
+<a name="office"></a>
+<h3>Office suite</h3>
+<p>
+The SliTaz packages database provides some lightweight office applications.
+All of these packages are easily installable in a few clicks through the packages
+manager. SliTaz also provides a simple way to install the powerful
+OpenOffice suite: just search for "OpenOffice" in the packages manager, double click
+on "get-OpenOffice3" and install the script with the <code>Auto exec</code> option
+enabled. 
+</p>
+<p>
+To have a lightweight office suite: just use Abiword as the Word processor, Gnumeric as a
+Spreadsheet and Homebank for Bank Accounting.
+</p>
+
+<a name="multimedia"></a>
+<h3>Multimedia</h3>
+<p>
+Most SliTaz flavors include a wide range of sound card drivers, a volume
+mixer and a light audio player to easily listen to any MP3 or OGG files. The Sound
+card is autodetected at boot time and audio support works out-of-the-box
+on many systems. If you manually add a new user and can't listen to audio, please
+check that the user belongs to the <code>audio</code> group. For any other trouble, please
+check the full documentation and/or use the forum.
+</p>
+<p>
+Videos can be watched by installing one single package or using a dedicated
+LiveCD or LiveUSB system. The SliTaz team have packaged some of the best video players 
+available under GNU/Linux: <code>mplayer</code>, <code>xine-ui</code> and <code>vlc</code>.
+</p>
+
+<a name="info"></a>
+<h3>System information</h3>
+<p>
+You can get information on your system by clicking on "System information"
+in the System Tools menu, then "Summary". Clicking on the other 
+buttons offers you more information, and using the benchmarks can
+give you an idea on how fast your computer is. To have a list and control
+of all your current processes, you can use the "Task Manager".
+</p>
+
+<a name="root"></a>
+<h3>Becoming Root</h3>
+<p>
+By default, Slitaz doesn't have its desktop running as root administrator:
+it asks for a root password (default <code>root</code>) for any superuser work.
+Therefore, it is safer and more secure. To become root in an xterm, simply 
+type <code>su</code> and enter the root password.
+</p>
+
+<a name="install"></a>
+<h3>Installation</h3>
+<p>
+SliTaz can be installed to a hard disk or on an USB mass storage device using the
+"SliTaz Installer" from the "System Tools" menu. The installer makes a full HD install.
+SliTaz won't function in memory (RAM) anymore like in Live or Frugal mode and 
+everything is persistent.
+</p>
+<p>
+To generate a LiveUSB system, you can use the "Tazusb LiveUSB Tool" from the "System Tools"
+menu or <code>tazusb</code> from the command line. More information can be found in the SliTaz
+Handbook: <a href="http://doc.slitaz.org/en:handbook:liveusb">LiveUSB media</a>
+</p>
+
+<!-- End of content -->
+</div>
+
+<div id="footer">
+	Copyright &copy; 2011 <a href="http://www.slitaz.org/">SliTaz GNU/Linux</a>
+</div>
+
+</body>
+</html>
