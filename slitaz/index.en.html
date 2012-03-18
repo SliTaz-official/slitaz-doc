@@ -82,14 +82,20 @@ Support can be found on the SliTaz mailing list or the community
 <a name="network"></a>
 <h3>Network connections</h3>
 <p>
-Click on the "Network Status Monitor" at the bottom right of the screen, then
-"Configure" and the network manager (netbox) will come up. You can then
-go to the "DHCP" tab and click "Start", and Slitaz will send a DHCP request 
-to the local router. You may also setup a static IP, PPPoE, PPP, VPN and 
-other networking options by using their respective tabs. To configure a wireless 
-connection, you can use SliTaz wifibox by clicking "Wireless Manager" in the 
-Network Manager or by using the "System Tools" menu entry -> "Wireless networks 
-connections".
+Open Tazpanel and go to the 
+<a href="http://tazpanel:82/network.cgi">Network</a>
+ tab.
+This shows a basic overview of your networking interfaces and their states.  To configure
+your Ethernet device, mouse over the Network tab and select 
+<a href="http://tazpanel:82/network.cgi?eth">Ethernet</a>
+.  From here you
+can configure your device to use DHCP or a static address.  To configure Wireless devices,
+mouse over the Network tab and select 
+<a href="http://tazpanel:82/network.cgi?wifi">Wireless</a>.
+  Here you can select a network to connect to.
+When you click on the desired network, the Connection box underneath will be appropriately
+filled in.  Next, enter your passphrase or leave the field blank for none.  Finally,
+click the Configure button to apply settings.
 </p>
 <p>
 More detailed information can be found in the Handbook: 
