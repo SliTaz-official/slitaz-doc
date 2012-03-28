@@ -12,18 +12,16 @@ desktop.
 
 Handbook
 --------
-The story started with a nice and static Handbook, translated by greate
+The story started with a nice and static Handbook, translated by great
 contributors from all over the world but one day the project decided
-to put all documentation on a wiki site. It was not a so good idea, no
-change in the handbook and no more static and packagable documentation as
-well as any real official reference documentation.
+to put all documentation on a wiki site.
 
 So in spring 2012, Claudinei asked Pankso if a new handbook would be fine.
-The anser was more than positive and the repo was created. The goal is
-to have a official documentation, unmodified by anonymous users, in pure
-HTML so it can be packages with a date string as version.
+The answer was more than positive and the repo was created. The goal is
+to have official unmodified documentation in pure HTML so it can be packaged 
+with a date string as version.
 
-We use this repos for collaboration and the mailing list.
+We use these repos for collaboration and the mailing list.
 
 
 ===============================================================================
