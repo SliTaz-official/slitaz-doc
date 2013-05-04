@@ -4,22 +4,21 @@
 	<meta charset="utf-8" />
 	<title>SliTaz - System doc (en)</title>
 	<link rel="shortcut icon" href="favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="../slitaz-doc.css" />
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
+<header>
 	<h1>SliTaz - System doc</h1>
-</div>
+</header>
 
 <!-- Languages -->
 <div id="lang">
 	<a href="http://www.slitaz.org/i18n.php">
-		<img src="images/locale.png" alt="locale.png" /></a>
+		<img src="images/locale.png" alt="Locale:" /></a>
 	<a href="index.cn.html">cn</a>
 	<a href="index.de.html">de</a>
-	<a href="index.en.html">en</a>
+	<strong>en</strong>
 	<a href="index.fr.html">fr</a>
 	<a href="index.hu.html">hu</a>
 	<a href="index.pt.html">pt</a>
@@ -62,49 +61,47 @@
 	<li><a href="http://doc.slitaz.org/en:start">Online Documentation</a></li>
 </ul>
 
-<a name="start"></a>
-<h2>Getting started</h2>
 
-<a name="tazpanel"></a>
-<h3>SliTaz Panel</h3>
+<h2 id="start">Getting started</h2>
+
+
+<h3 id="tazpanel">SliTaz Panel</h3>
 <p>
 	From spring 2011 the new way (and tool) to configure the system is TazPanel.
 	It is a CGI/web interface with a themable user interface from where you
 	can control your entire system, this includes package management, adding or
 	removing users, creating Live systems and much more. Each page provides
 	a small description to help you manage your SliTaz system. To access the
-	panel you can use the menu entry in "System Tools" or this url:
+	panel you can use the menu entry in “System Tools” or this url:
 </p>
 <p>
 	<a href="http://tazpanel:82">http://tazpanel:82</a>
 </p>
 
-<a name="network"></a>
-<h3>Network connections</h3>
-<p>
-Open Tazpanel and go to the 
-<a href="http://tazpanel:82/network.cgi">Network</a>
- tab.
-This shows a basic overview of your networking interfaces and their states.  To configure
-your Ethernet device, mouse over the Network tab and select 
-<a href="http://tazpanel:82/network.cgi?eth">Ethernet</a>
-.  From here you
-can configure your device to use DHCP or a static address.  To configure Wireless devices,
-mouse over the Network tab and select 
-<a href="http://tazpanel:82/network.cgi?wifi">Wireless</a>.
-  Here you can select a network to connect to.
-When you click on the desired network, the Connection box underneath will be appropriately
-filled in.  Next, enter your passphrase or leave the field blank for none.  Finally,
-click the Configure button to apply settings.
-</p>
+
+<h3 id="network">Network connections</h3>
+
+<p>Open Tazpanel and go to the
+<a href="http://tazpanel:82/network.cgi">Network</a> tab. This shows a basic
+overview of your networking interfaces and their states. To configure your
+Ethernet device, mouse over the Network tab and select
+<a href="http://tazpanel:82/network.cgi?eth">Ethernet</a>. From here you can
+configure your device to use DHCP or a static address. To configure Wireless
+devices, mouse over the Network tab and select
+<a href="http://tazpanel:82/network.cgi?wifi">Wireless</a>. Here you can select
+a network to connect to. When you click on the desired network, the Connection
+box underneath will be appropriately filled in. Next, enter your passphrase or
+leave the field blank for none. Finally, click the Configure button to apply
+settings.</p>
 <p>
 More detailed information can be found in the Handbook: 
 <a href="http://doc.slitaz.org/en:handbook:networkconf"
 	>Network configuration</a>
 </p>
 
-<a name="apps"></a>
-<h3>Applications</h3>
+
+<h3 id="apps">Applications</h3>
+
 <p>
 To have a list of all graphical applications, you can use the SliTaz menu button 
 at the bottom left of the screen. To have a list of command line tools, you
@@ -118,14 +115,15 @@ device containing any downloaded packages.  Naturally any package management
 can also be done from the command line using <code>tazpkg</code>.
 </p>
 
-<a name="office"></a>
-<h3>Office suite</h3>
+
+<h3 id="office">Office suite</h3>
+
 <p>
 The SliTaz packages database provides a variety of lightweight office applications.
 All of these packages are easily installable in a few clicks through the packages
 manager in Tazpanel. SliTaz also provides a simple way to install the powerful
-LibreOffice suite: just search for "LibreOffice" in the packages manager, double click
-on "get-LibreOffice", select the "Auto install non free package" checkbox, and click
+LibreOffice suite: just search for “LibreOffice” in the packages manager, double click
+on “get-LibreOffice”, select the “Auto install non free package” checkbox, and click
 Install.
 </p>
 <p>
@@ -133,8 +131,9 @@ To have a lightweight office suite: just use Abiword as the Word processor, Gnum
 Spreadsheet and Homebank for Bank Accounting.
 </p>
 
-<a name="multimedia"></a>
-<h3>Multimedia</h3>
+
+<h3 id="multimedia">Multimedia</h3>
+
 <p>
 Most SliTaz flavors include a wide range of sound card drivers, a volume
 mixer and a light audio player to easily listen to any MP3 or OGG files. The Sound
@@ -149,19 +148,21 @@ LiveCD or LiveUSB system. The SliTaz team have packaged some of the best video p
 available under GNU/Linux: <code>mplayer</code>, <code>xine-ui</code> and <code>vlc</code>.
 </p>
 
-<a name="info"></a>
-<h3>System information</h3>
+
+<h3 id="info">System information</h3>
+
 <p>
-You can get information on your system by clicking on "System information"
-in the System Tools menu, then "Summary". Clicking on the other 
+You can get information on your system by clicking on “System information”
+in the System Tools menu, then “Summary”. Clicking on the other 
 buttons offers you more information, and using the benchmarks can
 give you an idea on how fast your computer is. To have a list and control
-of all your current processes, you can use the "Task Manager" available in
+of all your current processes, you can use the “Task Manager” available in
 the same menu.
 </p>
 
-<a name="root"></a>
-<h3>Becoming Root</h3>
+
+<h3 id="root">Becoming Root</h3>
+
 <p>
 By default, Slitaz doesn't have its desktop running as root administrator:
 it asks for a root password (default <code>root</code>) for any superuser work.
@@ -171,8 +172,9 @@ as root, use <code>subox</code>.  For example, to run leafpad as root you
 would run <code>subox leafpad</code>.
 </p>
 
-<a name="install"></a>
-<h3>Installation</h3>
+
+<h3 id="install">Installation</h3>
+
 <p>
 SliTaz can be installed to a hard disk or on an USB mass storage device using the
 <a href="http://tazpanel:82/installer.cgi">SliTaz Installer</a> in Tazpanel. The installer makes a full HD install.
@@ -180,7 +182,7 @@ SliTaz won't function in memory (RAM) anymore like in Live or Frugal mode and
 everything is persistent.
 </p>
 <p>
-To generate a LiveUSB system, you can use the "Tazusb LiveUSB Tool" from the "System Tools"
+To generate a LiveUSB system, you can use the “Tazusb LiveUSB Tool” from the “System Tools”
 menu or <code>tazusb</code> from the command line. More information can be found in the SliTaz
 Handbook: <a href="http://doc.slitaz.org/en:handbook:liveusb">LiveUSB media</a>
 </p>
@@ -188,9 +190,9 @@ Handbook: <a href="http://doc.slitaz.org/en:handbook:liveusb">LiveUSB media</a>
 <!-- End of content -->
 </div>
 
-<div id="footer">
-	Copyright &copy; 2013 <a href="http://www.slitaz.org/">SliTaz GNU/Linux</a>
-</div>
+<footer>
+	Copyright © 2013 <a href="http://www.slitaz.org/">SliTaz GNU/Linux</a>
+</footer>
 
 </body>
 </html>

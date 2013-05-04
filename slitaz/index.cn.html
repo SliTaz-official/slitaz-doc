@@ -4,20 +4,19 @@
 	<meta charset="utf-8" />
 	<title>SliTaz - System doc (cn)</title>
 	<link rel="shortcut icon" href="favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="../slitaz-doc.css" />
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
+<header>
 	<h1>SliTaz - System doc</h1>
-</div>
+</header>
 
 <!-- Languages -->
 <div id="lang">
 	<a href="http://www.slitaz.org/i18n.php">
-		<img src="images/locale.png" alt="locale.png" /></a>
-	<a href="index.cn.html">cn</a>
+		<img src="images/locale.png" alt="Locale:" /></a>
+	<strong>cn</strong>
 	<a href="index.de.html">de</a>
 	<a href="index.en.html">en</a>
 	<a href="index.fr.html">fr</a>
@@ -52,11 +51,11 @@ SliTaz GNU/Linux 稳定版已发布,项目工具,手册和 <a href="relnotes.cn.
 	<li><a href="http://doc.slitaz.org/cn:start">在线文档</a></li>
 </ul>
 
-<a name="start"></a>
-<h2><font color="#df8f06">开始使用</font></h2>
 
-<a name="network"></a>
-<h3>网络连接</h3>
+<h2 id="start">开始使用</h2>
+
+
+<h3 id="network">网络连接</h3>
 <p>
 点击屏幕右下角的"Network Status Monitor"/"网络状态监视器",然后点击"Configure"/"配置"按钮,网路管理器(netbox)将会启动.
 你可以点击"DHCP"标签再点击"Start"/"开始"按钮, SliTaz就会给本地路由器发送DHCP请求自动获取IP.
@@ -69,8 +68,8 @@ SliTaz GNU/Linux 稳定版已发布,项目工具,手册和 <a href="relnotes.cn.
 <a href="http://doc.slitaz.org/en:handbook:networkconf">Network configuration/网络配置</a>
 </p>
 
-<a name="apps"></a>
-<h3>应用程序</h3>
+
+<h3 id="apps">应用程序</h3>
 <p>
 通过点击屏幕左下脚slitaz菜单图标你可以看到所有应用程序的分类列表.
 如果想要知道命令行工具,你可以进入终端程序根据屏幕提示或使用帮助查看使用方法.
@@ -79,8 +78,8 @@ SliTaz GNU/Linux 稳定版已发布,项目工具,手册和 <a href="relnotes.cn.
 任何安装包操作命令也可以通过命令行方式执行,详情请查看帮助 <code>tazpkg</code>.
 </p>
 
-<a name="office"></a>
-<h3>办公套件</h3>
+
+<h3 id="office">办公套件</h3>
 <p>
 SliTaz软件库提供许多轻量级的办公程序.
 所有这些程序你只需要通过程序管理器点击操作就可以安装到系统.
@@ -90,8 +89,8 @@ SliTaz也提供强大的办公程序OpenOffice的简单安装方法:在程序管
 使用轻量级的办公程序; Abiword文字处理,Gnumeric表格处理和Homebank银行管理.
 </p>
 
-<a name="multimedia"></a>
-<h3>多媒体</h3>
+
+<h3 id="multimedia">多媒体</h3>
 <p>
 大多数SliTaz发行版都内置各种声卡驱动,音量控制程序和轻量级的音频播放程序用于播放MP3和OGG文件.
 声卡在开机时会被自动检测,而且支持许多系统的外置音响.如果你添加了新用户,发现新用户不能使用音频设备,
@@ -102,24 +101,24 @@ SliTaz也提供强大的办公程序OpenOffice的简单安装方法:在程序管
 SliTaz开发小组提供了许多很好的GNU/Linux视频播放器程序,你可以从软件库里安装: <code>mplayer</code>, <code>xine-ui</code>和<code>vlc</code>
 </p>
 
-<a name="info"></a>
-<h3>系统信息</h3>
+
+<h3 id="info">系统信息</h3>
 <p>
 你可以通过菜单-系统工具-系统信息 来查看总体系统信息.点击相应按钮可以知道详细分类信息,
 通过基准点对比,你可以知道你的计算机的性能水平.
 控制系统进程,你可以使用"Task Manager"/"进程管理器".
 </p>
 
-<a name="root"></a>
-<h3>Root管理员使用</h3>
+
+<h3 id="root">Root管理员使用</h3>
 <p>
 默认情况下, Slitaz不支持root管理员进行桌面操作:
 要使用超级用户进行操作,需要输入密码 (default <code>root</code>) .
 这样更加安全和可靠. 在终端程序里使用超级管理员,只需要输入<code>su</code>,然后输入密码.
 </p>
 
-<a name="install"></a>
-<h3>系统安装</h3>
+
+<h3 id="install">系统安装</h3>
 <p>
 SliTaz可以菜单-"System Tools"/"系统工具"-"SliTaz Installer"／“SliTaz安装工具”安装到硬盘或者USB盘.
 而且全面支持硬盘安装.SliTaz live模式或精简模式下 系统可以运行在内存.
@@ -132,9 +131,9 @@ SliTaz可以菜单-"System Tools"/"系统工具"-"SliTaz Installer"／“SliTaz�
 <!-- End of content -->
 </div>
 
-<div id="footer">
-	Copyright &copy; 2013 <a href="http://www.slitaz.org/">SliTaz GNU/Linux</a>
-</div>
+<footer>
+	Copyright © 2013 <a href="http://www.slitaz.org/">SliTaz GNU/Linux</a>
+</footer>
 
 </body>
 </html>

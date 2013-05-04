@@ -4,22 +4,21 @@
 	<meta charset="utf-8" />
 	<title>SliTaz 4.0 - Notas de Lançamento</title>
 	<link rel="shortcut icon" href="favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="../slitaz-doc.css" />
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
+<header>
 	<h1>SliTaz 4.0 - Notas de Lançamento</h1>
-</div>
+</header>
 
 <!-- Languages -->
 <div id="lang">
 	<a href="http://www.slitaz.org/i18n.php">
 		<img src="images/locale.png" alt="Locale:" /></a>
-	<a href="relnotes.en.html">en</a> |
-	<a href="relnotes.fr.html">fr</a> |
-    <a href="relnotes.pt.html">pt</a> |
+	<a href="relnotes.en.html">en</a>
+	<a href="relnotes.fr.html">fr</a>
+	<strong>pt</strong>
 	<a href="relnotes.ru.html">ru</a>
 </div>
 
@@ -40,8 +39,8 @@
 	<li>Boot em 10 segundos ou menos, em máquinas mais recentes</li>
 	<li>Novo painel de controle que centraliza as configurações</li>
 	<li>Nova ferramenta de compilação que permite criar pacotes facilmente</li>
-	<li>Novo sistema de "Rolling Release", com imagens ISO atualizadas a cada pacote modificado</li>
-	<li>Novo sistema de "Boneca Russa", com 4 distribuições em uma no LiveCD</li>
+	<li>Novo sistema de “Rolling Release”, com imagens ISO atualizadas a cada pacote modificado</li>
+	<li>Novo sistema de “Boneca Russa”, com 4 distribuições em uma no LiveCD</li>
 	<li>Novo instalador e atualizador gráfico</li>
 	<li>Novas ferramentas gráficas para criação de um sistema Live</li>
 	<li>Boot via web melhorado: <a href="http://boot.slitaz.org/" target="_blank">boot.slitaz.org</a></li>
@@ -52,7 +51,7 @@
 <h3>Toolchain e ferramentas de compilação</h3>
 <p>
     O SliTaz 4.0 foi compilado inteiramente com as novas ferramentas chamadas 
-    "cookutils". Elas podem coordenar a compilação de mais ou menos 3300 
+    “cookutils”. Elas podem coordenar a compilação de mais ou menos 3300 
     pacotes e suas dependências de forma simples e consistente, permitindo
     também a criação de pacotes para a distribuição de forma rápida. Elas
     encontram-se instaladas, assim como sua documentação, em qualquer 
@@ -64,7 +63,7 @@
     O SliTaz GNU/Linux 4.0 suporta a maioria das máquinas baseadas em
     processadores compatíveis com a família i486 ou arquitetura x86 da
     Intel. Um mínimo de 192 MB de memória RAM é recomendado para usar
-    o LiveCD e o sistema de "Boneca Russa", que detecta a memória física
+    o LiveCD e o sistema de “Boneca Russa”, que detecta a memória física
     disponível e escolhe a melhor versão da distribuição a ser executada.
     O LiveCD padrão traz um ambiente de trabalho completo, um ambiente de
     trabalho simples, um ambiente com somente o servidor gráfico rodando
@@ -146,7 +145,7 @@
     como gerencimento de pacotes, de usuários, criação de LiveCD, e mais.
     Cada página da interface possui uma pequena descrição para ajudá-lo
     a administrar o sistema. Para acessar o Tazpanel, pode-se usar a
-    entrada de menu em "Ferramentas do Sistema" ou no endereço:
+    entrada de menu em “Ferramentas do Sistema” ou no endereço:
     <a href="http://tazpanel:82" target="_blank">http://tazpanel:82</a>
 </p>
 
@@ -171,7 +170,7 @@
     Por meio de alguma variante ou em um sistema instalado pode-se obter
     o ambiente desktop Enlightenment (e17) ou os gerenciadores de janelas
     XFCE, Pekwm, JWM e DWM. Diferentes sessões podem ser selecionadas
-    pela tecla F1 durante a tela de login do "Slim". Para mudar a sessão
+    pela tecla F1 durante a tela de login do “Slim”. Para mudar a sessão
     padrão pode-se utilizar o tazx, ou manualmente, editando o arquivo
 	~/.Xinitrc.
 </p>
@@ -195,7 +194,7 @@
     O instalador do SliTaz fornece a função de atualizar da versão 3.0
     para a 4.0. Para utilizar esta função é necessário fazer o boot
     pelo LiveCD da 4.0, iniciar o instalador pela linha de comando ou
-    pelo Tazpanel, selecionar a opção "upgrade" e então indicar a partição
+    pelo Tazpanel, selecionar a opção “upgrade” e então indicar a partição
     ou arquivo de configuração que possui as informações sobre o sistema
     3.0 a ser atualizado. O instalador então irá instalar o novo sistema
     4.0 e todos os pacotes que estavam presentes na instalação da versão
@@ -230,16 +229,16 @@
 	<li>Samuel Trassare</li>
 	<li>Christian Mesh</li>
 	<li>Alexander Medvedev</li>
-        <li>Richard Dunbar</li>
-	<li>...</li>
+	<li>Richard Dunbar</li>
+	<li>…</li>
 </ul>
 
 <!-- End of content -->
 </div>
 
-<div id="footer">
+<footer>
 	Copyright © 2013 <a href="http://www.slitaz.org/" target="_blank">SliTaz GNU/Linux</a>
-</div>
+</footer>
 
 </body>
 </html>
