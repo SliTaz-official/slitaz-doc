@@ -1,4 +1,5 @@
 [Desktop Entry]
+Type=Application
 Name=System Doc
 Name[fr]=Doc du système
 Name[pt]=Documentação do Sistema
@@ -6,5 +7,4 @@ Name[pt_BR]=Documentação do Sistema
 Name[ru]=Системная документация
 Exec=browser file:///usr/share/doc/slitaz/index.html
 Icon=slitaz-doc
-Type=Application
-Categories=Documentation;
+Categories=System;Documentation;
