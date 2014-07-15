@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cn">
+<head>
+	<meta charset="utf-8" />
+	<title>SliTaz - 系统文档 (cn)</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="../slitaz-doc.css" />
+</head>
+<body>
+
+<header>
+	<h1>SliTaz - 系统文档</h1>
+</header>
+
+<!-- Languages -->
+<div id="lang">
+	<a href="http://www.slitaz.org/i18n.php">
+		<img src="images/locale.png" alt="Locale:" /></a>
+	<strong>cn</strong>
+	<a href="index.de.html">de</a>
+	<a href="index.en.html">en</a>
+	<a href="index.fr.html">fr</a>
+	<a href="index.hu.html">hu</a>
+	<a href="index.pt.html">pt</a>
+	<a href="index.ru.html">ru</a>
+</div>
+
+<!-- content. -->
+<div id="content">
+
+<h2>文档 (cn)</h2>
+
+<!--
+<p>
+the cooking version doesn't provide any release notes, major changes are
+announced on the web site and the <a href="http://labs.slitaz.org/">labs</a>
+provide fresh news about the project's activity. like the stable version, you
+will find <a href="http://doc.slitaz.org/">documentation</a> on the wiki site
+and support on the community <a href="http://forum.slitaz.org/">forum</a>.
+</p>
+-->
+
+<p>
+SliTaz GNU/Linux 稳定版已发布,项目工具,手册和 <a href="relnotes.cn.html">发行笔记</a>已安装到系统. 你可以通过菜单访问手册和此页面.更多SliTaz相关信息请查看 <a href="http://www.slitaz.org/en/">项目主页</a>. 关于如何使用和配置系统你可以查看 <a href="http://doc.slitaz.org/en:handbook:start">使用指南</a>.
+更多技术支持可以通过订阅slitaz邮件列表和社区交流<a href="http://forum.slitaz.org/">论坛</a>. 
+</p>
+
+<ul>
+	<li><a href="#start">开始使用指南</a></li>
+	<li><a href="relnotes.cn.html">3.0发行笔记</a></li>
+	<li><a href="http://doc.slitaz.org/cn:start">在线文档</a></li>
+</ul>
+
+
+<h2 id="start">开始使用</h2>
+
+
+<h3 id="network">网络连接</h3>
+<p>
+点击屏幕右下角的"Network Status Monitor"/"网络状态监视器",然后点击"Configure"/"配置"按钮,网路管理器(netbox)将会启动.
+你可以点击"DHCP"标签再点击"Start"/"开始"按钮, SliTaz就会给本地路由器发送DHCP请求自动获取IP.
+你也可以在相应的标签设置你的固定IP, PPPoE, PPP, VPN和其他功能.
+设置无线网络,你可以点击"Network Manager"/"网络管理器"下面的"Wireless Manager"/“无线管理器”来进行相关配置, 
+或者进入菜单-&gt; "System Tools"/"系统工具"  -&gt; "Wireless networks connections"/"无线网络连接"进行相关配置.
+</p>
+<p>
+更多详细信息请查看使用手册: 
+<a href="http://doc.slitaz.org/en:handbook:networkconf">Network configuration/网络配置</a>
+</p>
+
+
+<h3 id="apps">应用程序</h3>
+<p>
+通过点击屏幕左下脚slitaz菜单图标你可以看到所有应用程序的分类列表.
+如果想要知道命令行工具,你可以进入终端程序根据屏幕提示或使用帮助查看使用方法.
+所有安装过的应用程序,你可以通过任务栏的软件包管理器快捷图标启动进行管理,或者进入菜单-&gt; "System Tools"/"系统工具"  -&gt;软件包管理器. 
+安装新的软件包,你必须确认你有网络连接,DVD软件包集合或保存有安装包的U盘.
+任何安装包操作命令也可以通过命令行方式执行,详情请查看帮助 <code>tazpkg</code>.
+</p>
+
+
+<h3 id="office">办公套件</h3>
+<p>
+SliTaz软件库提供许多轻量级的办公程序.
+所有这些程序你只需要通过程序管理器点击操作就可以安装到系统.
+SliTaz也提供强大的办公程序OpenOffice的简单安装方法:在程序管理器里搜索"OpenOffice",双击"get-OpenOffice3",然后将会通过脚本自动安装 <code>Auto exec</code> . 
+</p>
+<p>
+使用轻量级的办公程序; Abiword文字处理,Gnumeric表格处理和Homebank银行管理.
+</p>
+
+
+<h3 id="multimedia">多媒体</h3>
+<p>
+大多数SliTaz发行版都内置各种声卡驱动,音量控制程序和轻量级的音频播放程序用于播放MP3和OGG文件.
+声卡在开机时会被自动检测,而且支持许多系统的外置音响.如果你添加了新用户,发现新用户不能使用音频设备,
+清检查你的用户是否在<code>audio</code>群组里.如果你还有其他问题,你可以查看相关文档或进入论坛交流.
+</p>
+<p>
+视频播放也很容易,只需要安装几个程序包,或者使用其他集成视频播放器版本的LiveCD或LiveUSB系统.
+SliTaz开发小组提供了许多很好的GNU/Linux视频播放器程序,你可以从软件库里安装: <code>mplayer</code>, <code>xine-ui</code>和<code>vlc</code>
+</p>
+
+
+<h3 id="info">系统信息</h3>
+<p>
+你可以通过菜单-系统工具-系统信息 来查看总体系统信息.点击相应按钮可以知道详细分类信息,
+通过基准点对比,你可以知道你的计算机的性能水平.
+控制系统进程,你可以使用"Task Manager"/"进程管理器".
+</p>
+
+
+<h3 id="root">Root管理员使用</h3>
+<p>
+默认情况下, Slitaz不支持root管理员进行桌面操作:
+要使用超级用户进行操作,需要输入密码 (default <code>root</code>) .
+这样更加安全和可靠. 在终端程序里使用超级管理员,只需要输入<code>su</code>,然后输入密码.
+</p>
+
+
+<h3 id="install">系统安装</h3>
+<p>
+SliTaz可以菜单-"System Tools"/"系统工具"-"SliTaz Installer"／“SliTaz安装工具”安装到硬盘或者USB盘.
+而且全面支持硬盘安装.SliTaz live模式或精简模式下 系统可以运行在内存.
+</p>
+<p>
+创建LiveUSB系统,你可以使用"System Tools"/"系统工具"里的"Tazusb LiveUSB Tool"工具,或者使用命令行 <code>tazusb</code>.
+更多信息,你可以查看使用手册: <a href="http://doc.slitaz.org/en:handbook:liveusb">LiveUSB media</a>
+</p>
+
+<!-- End of content -->
+</div>
+
+<footer>
+	版权 © <span class="year"></span> <a href="http://www.slitaz.org/">SliTaz GNU/Linux</a>
+</footer>
+
+</body>
+</html>

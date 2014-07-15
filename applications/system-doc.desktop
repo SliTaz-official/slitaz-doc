@@ -5,6 +5,7 @@ Name[fr]=Doc du système
 Name[pt]=Documentação do Sistema
 Name[pt_BR]=Documentação do Sistema
 Name[ru]=Системная документация
+Name[zh_CN]= 系统文档
 Exec=browser file:///usr/share/doc/slitaz/index.html
 Icon=slitaz-doc
 Categories=System;Documentation;
