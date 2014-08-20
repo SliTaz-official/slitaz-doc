@@ -1,8 +1,10 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 Type=Application
 Name=Documentation
 Name[pt]=Documentação
 Name[pt_BR]=Documentação
 Name[ru]=Документация
+Name[zh_CN]= 文档
 Exec=browser file:///usr/share/doc/slitaz/index.html
 Icon=slitaz-doc
