@@ -53,10 +53,136 @@ de discussion ou <a href="http://forum.slitaz.org/">le forum</a>.
 </p>
 
 <ul>
-	<li><a href="index.en.html#start">Getting started guide</a> (en)</li>
+	<li><a href="#start">Guide pour débuter</a></li>
 	<li><a href="relnotes.fr.html">Notes de publication pour 5.0</a></li>
 	<li><a href="http://doc.slitaz.org/fr:start">Wiki en ligne</a></li>
 </ul>
+
+<h2 id="start">Pour débuter</h2>
+
+
+<h3 id="tazpanel">Tableau de bord SliTaz (tazpanel)</h3>
+<p>
+	Depuis le printemps 2011 la nouvelle façon de configurer le système
+	se fait par l'outil TazPanel.
+	C'est une interface web/CGI thémable à partir de laquelle vous
+	pouvez contrôler tout le système. Celà inclut la gestion des paquets,
+	l'ajout et le retrait d'utilisateurs, la création de systèmes Lives
+	et bien plus encore. Chaque page vous donne une petite description pour
+	vous aider à gérer votre système SliTaz. Pour accéder au Tableau de
+	bord vous pouvez utiliser l'entrée "Outils système..." du menu ou
+	cette url :
+</p>
+<p>
+	<a href="http://tazpanel:82">http://tazpanel:82</a>
+</p>
+
+
+<h3 id="network">Connexions réseau</h3>
+
+<p>Ouvrez Tazpanel et cliquez l'onglet
+<a href="http://tazpanel:82/network.cgi">Réseau</a>. Cela affiche un résumé
+simplifié de vos interfaces réseau et de leur état. Pour configurer votre
+périphérique Ethernet, sélectionnez 
+<a href="http://tazpanel:82/network.cgi?eth">Réseau filaire</a> dans l'onglet
+Réseau. A partir de là vous pouvez configurer votre interface pour
+utiliser DHCP ou une adresse statique. Pour configurer vos périphériques
+sans fil, sélectionnez 
+<a href="http://tazpanel:82/network.cgi?wifi">Réseau sans fil</a> dans
+l'onglet Réseau. A partir de là vous pouvez sélectionner le réseau auquel 
+se connecter. Quand vous cliquez sur le réseau désiré, la boite de
+connexion en dessous est remplie. Ensuite, entrez votre 'passphrase' ou laissez
+le champ vide s'il n'y en a pas. Enfin cliquez le bouton Configure pour 
+valider vos paramètres.</p>
+<p>
+Vous trouverez plus d'information dans le manuel :
+<a href="http://doc.slitaz.org/fr:handbook:networkconf"
+	>Configuration du réseau</a>
+</p>
+
+
+<h3 id="apps">Applications</h3>
+
+<p>
+Pour avoir la liste de toutes les applications graphiques, vous pouvez utiliser
+le bouton de menu en haut à gauche de l'écran. Pour avoir la liste de tous
+les outils en ligne de commande, vous pouvez ouvrir un terminal et appuyer deux
+fois sur la touche tabulation. Tazpanel fournit une interface graphique pour
+la gestion des paquets avec l'onglet
+<a href="http://tazpanel:82/pkgs.cgi">Paquets</a>. Pour récupérer la liste
+de tous les paquets installés, ouvrez Tazpanel et choisissez la page
+<a href="http://tazpanel:82/pkgs.cgi?list">Mes Paquets</a>. Pour installer de
+nouveaux paquets logiciels, vous devez avoir une connexion réseau, le DVD des
+paquets ou une clé USB avec des paquets précédemment téléchargés.
+Bien sûr toute la gestion de paquets peut aussi être faite en ligne de
+commande avec <code>tazpkg</code>.
+</p>
+
+
+<h3 id="office">Bureautique</h3>
+
+<p>
+La base de paquets SliTaz fournit diverses applications de bureautique légères.
+Tous ces paquets sont facilement installables en quelques clicks par le gestionnaire
+de paquet de Tazpanel. SliTaz fournit aussi une façon simplifiée pour
+installer la performante suite LibreOffice : cherchez simplement "LibreOffice"
+dans le gestionnaire de paquet, double-clicker sur "get-LibreOffice", cocher
+la case "Installe automatiquement le paquet", et cliquez sur Installer.
+</p>
+<p>
+Pour avoir une suite bureautique légère : utilisez Abiword comme traitement
+de texte, Gnumeric comme tableur et Homebank pour gérer vos comptes.
+</p>
+
+
+<h3 id="multimedia">Multimedia</h3>
+
+<p>
+La plupart des saveurs SliTaz incluent une grande variété de pilote de carte
+son, un contrôle du volume et un lecteur audio léger pour écouter facilement
+n'importe quel fichier MP3 ou OGG. La carte son est autodétectée au démarrage
+et le support audio fonctionne directement sur beaucoup de systèmes.
+Si vous ajoutez manuellement un nouvel utilisateur et qu'il ne peut pas
+écouter de fichiers audio, veuillez vérifier que l'utilisateur appartient
+bien au groupe <code>audio</code>. Pour tout autre problème vérifiez la
+documentation et/ou utilisez le <a href="http://forum.slitaz.org/">forum</a>.
+</p>
+<p>
+Les videos utilisant un codec HTML5 habituel comme WEBM ou MPEG4 peuvent être
+vues directement. Les autres peuvent être vues en installant un simple paquet
+ou en utilisant un système LiveCD ou LiveUSB. L'équipe de SliTaz à 
+empaqueté quelques uns des meilleurs lecteurs video disponibles sous GNU/Linux :
+<code>mplayer</code>, <code>xine-ui</code> et <code>vlc</code>.
+</p>
+
+
+<h3 id="root">Devenir Root</h3>
+
+<p>
+Par défaut, le bureau de SliTaz n'est pas lancé par l'utilisateur root :
+il demande le mot de passe root (pas défaut <code>root</code>) pour chaque
+action super utilisateur. C'est plus sûr. Pour devenir root dans un xterm, 
+tapez <code>su</code> et entrez le mot de passe root. Pour lancer une 
+application graphique en root, utilisez <code>subox</code>. Par exemple, pour
+lancer leafpad en root vour lancerez <code>subox leafpad</code>.
+</p>
+
+
+<h3 id="install">Installation</h3>
+
+<p>
+SliTaz peut être installé sur le disque dur ou une clé USB avec 
+l'<a href="http://tazpanel:82/installer.cgi">installeur SliTaz</a> du Tazpanel.
+L'installeur fait une installation complète sur disque dur. SliTaz ne 
+fonctionnera plus de mémoire (RAM) comme dans les modes Live ou Frugal et
+tout sera persistant.
+</p>
+<p>
+Pour générer un système LiveUSB, vous pouvez utiliser "Créer un liveUSB"
+dans le menu "Outils système..." ou <code>tazusb</code> en ligne de commande.
+Pour plus d'information, voir le manuel : 
+<a href="http://doc.slitaz.org/fr:handbook:liveusb">LiveUSB</a>
+</p>
 
 <!-- End of content -->
 </div>
