@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>SliTaz - System doc (en)</title>
+	<title>SliTaz - System doc</title>
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="../slitaz-doc.css">
 </head>
@@ -28,7 +28,7 @@
 <!-- Content. -->
 <div id="content">
 
-<h2>Documentation (en)</h2>
+<h2>Documentation</h2>
 
 <!--<p>
 	The Cooking version doesn't provide any Release Notes, major changes are
@@ -51,13 +51,7 @@
 
 <ul>
 	<li><a href="#start">Getting started guide</a></li>
-	<li><a href="relnotes.en.html">Release Notes for 5.0</a>
-		 - <a href="relnotes.cn.html">cn</a> |
-		<a href="relnotes.en.html">en</a> |
-		<a href="relnotes.es.html">es</a> |
-		<a href="relnotes.fr.html">fr</a> |
-		<a href="relnotes.pt.html">pt</a>
-	</li>
+	<li><a href="relnotes.en.html">Release Notes for 5.0</a></li>
 	<li><a href="http://doc.slitaz.org/en:start">Online Documentation</a></li>
 </ul>
 
@@ -72,31 +66,52 @@
 	can control your entire system, this includes package management, adding or
 	removing users, creating Live systems and much more. Each page provides
 	a small description to help you manage your SliTaz system. To access the
-	panel you can use the menu entry in "System Tools” or this url:
+	panel you can use the menu entry in “System Tools” or this URL:
 </p>
 <p>
 	<a href="http://tazpanel:82">http://tazpanel:82</a>
 </p>
+<p>
+	While some actions in the panel are available to the user, other require
+	administrator rights. On the right side of the TazPanel menu you can find
+	an icon, prompting the current operating mode:
+</p>
+<ul>
+	<li><span style="color:#859900"></span> for user mode;</li>
+	<li><span style="color:#cb4b16"></span> for administration mode.</li>
+</ul>
+<p>
+	Please, point mouse cursor over icon to show more information; click icon
+	to log into TazPanel as different user or root administrator.
+</p>
+
 
 
 <h3 id="network">Network connections</h3>
 
-<p>Open Tazpanel and go to the
-<a href="http://tazpanel:82/network.cgi">Network</a> tab. This shows a basic
-overview of your networking interfaces and their states. To configure your
-Ethernet device, mouse over the Network tab and select
-<a href="http://tazpanel:82/network.cgi?eth">Ethernet</a>. From here you can
-configure your device to use DHCP or a static address. To configure Wireless
-devices, mouse over the Network tab and select
-<a href="http://tazpanel:82/network.cgi?wifi">Wireless</a>. Here you can select
-a network to connect to. When you click on the desired network, the Connection
-box underneath will be appropriately filled in. Next, enter your passphrase or
-leave the field blank for none. Finally, click the Configure button to apply
-settings.</p>
 <p>
-More detailed information can be found in the Handbook: 
-<a href="http://doc.slitaz.org/en:handbook:networkconf"
-	>Network configuration</a>
+	Open Tazpanel and click the “Network” →
+	“<a href="http://tazpanel:82/network.cgi">Summary</a>” menu entry.
+	This shows a basic overview of your networking interfaces and their states.
+</p>
+<p>
+	To configure your Ethernet device, click the “Network” →
+	“<a href="http://tazpanel:82/network.cgi?eth">Ethernet</a>”.
+	From here you can configure (with administrator permissions) your device
+	to use DHCP or a static address.
+</p>
+<p>
+	To configure Wireless devices, click the “Network” →
+	“<a href="http://tazpanel:82/network.cgi?wifi">Wireless</a>”.
+	Here you can select a network to connect to (with administrator permissions).
+	When you click on the desired network, the Connection box underneath will be
+	appropriately filled in.
+	Next, enter your passphrase or leave the field blank for none.
+	Finally, click the Configure button to apply settings.
+</p>
+<p>
+	More detailed information can be found in the Handbook:
+	<a href="http://doc.slitaz.org/en:handbook:networkconf">Network configuration</a>.
 </p>
 
 
@@ -105,14 +120,26 @@ More detailed information can be found in the Handbook:
 <p>
 To have a list of all graphical applications, you can use the SliTaz menu button 
 at the top left of the screen. To have a list of command line tools, you
-can open a terminal and double press on the tabulation button.  Tazpanel provides 
+can open a terminal and double press on the tabulation button.
+</p>
+<p>
+Tazpanel provides 
 a nice GUI for package management through the 
 <a href="http://tazpanel:82/pkgs.cgi">Packages</a> tab. To retrieve a list of all 
 installed packages, open Tazpanel and navigate to the 
-<a href="http://tazpanel:82/pkgs.cgi?list">My Packages</a> page.  To install new 
+<a href="http://tazpanel:82/pkgs.cgi?list">My Packages</a> page.
+</p>
+<p>
+To install new 
 packages, you must have a network connection, the DVD of packages or a USB storage
 device containing any downloaded packages.  Naturally any package management
 can also be done from the command line using <code>tazpkg</code>.
+</p>
+<p>
+Another option to query packages database online is to use
+<a href="http://pkgs.slitaz.org/">pkgs.slitaz.org</a> in graphical web browser
+on any of your devices. You can see screenshots of applications and even install
+or remove a package, if the site is opened in SliTaz.
 </p>
 
 
@@ -122,9 +149,9 @@ can also be done from the command line using <code>tazpkg</code>.
 The SliTaz packages database provides a variety of lightweight office applications.
 All of these packages are easily installable in a few clicks through the packages
 manager in Tazpanel. SliTaz also provides a simple way to install the powerful
-LibreOffice suite: just search for "LibreOffice” in the packages manager, double click
-on "get-LibreOffice”, select the "Auto install non free package” checkbox, and click
-Install.
+LibreOffice suite: just search for “LibreOffice” in the packages manager, click
+on “get-LibreOffice”, and click Install (to install and remove packages you
+need an administrator permissions).
 </p>
 <p>
 To have a lightweight office suite: just use
@@ -152,9 +179,9 @@ Videos using common HTML5 codecs such as WEBM or MPEG4 can be watched out-of-the
 Other videos can be watched by installing one single package or using a dedicated
 LiveCD or LiveUSB system. The SliTaz team have packaged some of the best video players 
 available under GNU/Linux: 
-<a href="http://127.0.0.1:82/user/pkgs.cgi?info=mplayer">mplayer</a>,
-<a href="http://127.0.0.1:82/user/pkgs.cgi?info=xine-ui">xine-ui</a> and
-<a href="http://127.0.0.1:82/user/pkgs.cgi?info=vlc">vlc</a>.
+<a href="http://127.0.0.1:82/user/pkgs.cgi?info=mplayer">MPlayer</a>,
+<a href="http://127.0.0.1:82/user/pkgs.cgi?info=xine-ui">Xine-UI</a> and
+<a href="http://127.0.0.1:82/user/pkgs.cgi?info=vlc">VLC</a>.
 </p>
 
 
@@ -163,10 +190,12 @@ available under GNU/Linux:
 <p>
 By default, SliTaz doesn't have its desktop running as root administrator:
 it asks for a root password (default <code>root</code>) for any superuser work.
-Therefore, it is safer and more secure. To become root in an xterm, simply 
-type <code>su</code> and enter the root password.  To run a graphical application
-as root, use <code>subox</code>.  For example, to run leafpad as root you
-would run <code>subox leafpad</code>.
+Therefore, it is safer and more secure.
+</p>
+<p>
+To become root in an xterm, simply type <code>su</code> and enter the root password.
+To run a graphical application as root, use <code>subox</code>.
+For example, to run leafpad as root you would run <code>subox leafpad</code>.
 </p>
 
 
@@ -174,15 +203,16 @@ would run <code>subox leafpad</code>.
 
 <p>
 SliTaz can be installed to a hard disk or on an USB mass storage device using the
-<a href="http://tazpanel:82/installer.cgi">SliTaz Installer</a> in Tazpanel. The installer makes a full HD install.
+<a href="http://tazpanel:82/installer.cgi">SliTaz Installer</a> in Tazpanel.
+The installer makes a full HD install.
 SliTaz won't function in memory (RAM) anymore like in Live or Frugal mode and 
 everything is persistent.
 </p>
 <p>
-To generate a LiveUSB system, you can use the "Tazusb LiveUSB Tool” from 
-the "System Tools” menu or <code>tazusb</code> from the command line. More 
+To generate a LiveUSB system, you can use the “Tazusb LiveUSB Tool” from 
+the “System Tools” menu or <code>tazusb</code> from the command line. More 
 information can be found in the SliTaz Handbook:
-<a href="http://doc.slitaz.org/en:handbook:liveusb">LiveUSB media</a>
+<a href="http://doc.slitaz.org/en:handbook:liveusb">LiveUSB media</a>.
 </p>
 
 <!-- End of content -->
